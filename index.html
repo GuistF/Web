@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Volp A.I.</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon.png">
+    <link rel="icon" href="assets/img/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/elements.css" rel="stylesheet">
+    <link href="assets/css/style-main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/vertical-sidebar.css">
+    <!-- END Page Level CSS-->
+
+
+<style>
+.rm-inactive {
+font-family: 'Montserrat',sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 66px;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+	background-image: -webkit-linear-gradient( 90deg, #26253e 30%, #2c2b47 20%, #2a293f 50%);
+	    box-shadow: 2px 0 25px 0 rgba(0,0,0,0.32);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+    .roadmap-timeline-list .rm-inactive:after {
+    font-family: fontawesome;
+    font-size: 25px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -7px;
+    content: '\f0d7';
+    color: #2a293f;
+}
+
+.wg-drop.country-selector {
+    background-color: transparent!important;
+}
+.wg-drop.country-selector .wgcurrent {
+    border: none!important;
+}
+
+.country-selector a {
+    color: white!important;
+	text-transform: uppercase;
+    font-family: CustomFont, sans-serif;
+}
+.wg-drop.country-selector .wgcurrent:after {
+    filter: invert(100%)!important;
+}
+.wg-drop.country-selector a{
+    display:block;
+    height:37px;
+    line-height:36px;
+    color:#000;
+    padding:0 10px;
+    white-space:nowrap
+}
+.wg-drop.country-selector:not(.closed) ul {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+	background-color: #0C1959!important;
+    border-radius: 10px;
+    border: #0c1959;
+}
+</style>
+   <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('ek6i33s9drpt');
+</script>
+<!-- End of Async Drift Code -->
+
+    <link rel="stylesheet" href="assets/css/main.min.css" type="text/css"/>
+    <!-- Load CSS End-->
+<link rel="stylesheet" type="text/css" href="assets/css/social-sidebar.css"/>
+    <!--common style-->
+
+
+    <!--custom css-->
+    <link href="assets/css/main-roadmap.css" rel="stylesheet">
+
+</head> <body class="home">
+<aside id="social-sidebar" class="pos-fixed show-effects pos-left shape-square size-small colors-color label-curve corners">
+			<ul>
+				<li>
+					<a href="https://t.me/VolpCommunity" target="_blank" class="facebook">
+						<span class="link-icon"><i class="fa fa-telegram"></i></span>
+						<span class="link-label">Telegram</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="https://discordapp.com/invite/ddFBjRT" target="_blank" class="twitter">
+						<span class="link-icon"><i class="fab fa-discord"></i></span>
+						<span class="link-label">Discord</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="https://twitter.com/Volp_AI" target="_blank" class="google-plus">
+						<span class="link-icon"><i class="fa fa-twitter"></i></span>
+						<span class="link-label">Twitter</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="https://bitcoingarden.org/forum/index.php?topic=37737.msg281076#msg281076" target="_blank" class="instagram">
+						<span class="link-icon"><i class="fas fa-comments"></i></span>
+						<span class="link-label">Forum</span>
+					</a>
+				</li>
+
+				<li>
+					<a href="mailto:support@volpcoin.eu" target="_blank" class="vimeo">
+						<span class="link-icon"><i class="fas fa-envelope"></i></span>
+						<span class="link-label">Email</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+
+    </div>
+     <header id="sticker" class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="logo ">
+                        <a href="index.html"><img  style="    max-width: 143%;
+    height: auto;
+    margin-top: -21px;" src="assets/img/logo/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-9">
+                    <nav>
+                        <div class="mainmenu text-right">
+                            <ul id="nav" class="menu">
+                                <li><a href="#slider-section">HOME</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li class="dropdown current-menu-item current-menu-has-children"><a href="#"> VOLP A.I</a>
+                                    <ul class="dropdown-nav dropdown-nav-left">
+                                        <li class=""><a href="volp_ai.html">ABOUT</a></li>
+                                        <li class=""><a href="applications.html">APPLICATIONS</a></li>
+                                        <li class=""><a href="wiki/doc.html">WIKI</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#roadmap-area">ROADMAP</a></li>
+                                <li><a href="#token">TOKEN</a></li>
+                                <li><a href="#faq-area">FAQ</a></li>
+                                <li><div class=" weglot-container weglot_here"></div></li>
+                               <li class="login"> <a class="sing-up" href="join-team.html">JOIN THE TEAM</a></li>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="slider-section" class="slider_area  slider-wrapper">
+        <div id="background-1" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-2" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-3" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-4" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-5" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-6" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-7" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-8" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-9" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-10" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-11" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-12" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div id="background-13" class="mouse-bg hidden-xs hidden-sm"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 ">
+                    <div class=" slide-caption-inner slider-text">
+                        <h2 class="animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"> Volp A.I -  Artificial Intelligence Protocol</h2>
+                            <p class="animated wow  fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Advanced non-corruptible data and distribution management system combining a neural network and deep learning. </p>
+                        <br>
+                        <div class="slider-links " style="margin-top: -63px;">
+                            <ul>
+                                <li><a href="#about" class="slider-btn animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"><i class="ti-user"> LEARN MORE</i></a></li>
+                                <li><a href="#token" class="slider-btn slider-btn-2 wow  animated  fadeInUp" data-wow-duration="1s" data-wow-delay=".6s"><i class="ti-wallet">  DOWNLOAD WALLET</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="slider-img ">
+                    <img src="assets/img/logo/slider-logo.png" alt="place your img" class="slider-logo-img w3-spin">
+                    <img class=" wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" src="assets/img/slider-img/slider-img.png" alt="slider-img">
+                </div!-->
+            </div>
+        </div>
+    </section>
+
+	 <section id="about" class="work_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="choose-left-content">
+                        <h2 class="animated wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Why Choose <span>Volp </span>Protocol ?</h2><span style=" position: absolute;
+  top: 13%;
+    left: 0;
+    width: 100%;
+    content: attr(data-content);
+    font-size: 90px;
+    height: 120px;
+    margin-top: -60px;
+    line-height: 1;
+    z-index: 1;
+    font-weight: bold;
+    color: rgba(122,15,255,0.08);">BLOCKCHAIN</span>
+                        <p class="animated wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">It's a dynamic technology that will provide a quick and simple solution to integrate into any type of information management platforms and any other type of digital file. The protocol is integrated with tools that enable the easy implementation of functionalities that fulfill legal obligations, such as KYC, AML and GDPR.  </p>
+                        <p class="animated wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">These solutions will be managed by Volp's Intelligent Protocol, where it has to stand autonomous applications that will make decisions and make sure that the entire encryption system complies with current consensus standards. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+	<section id="Volp-area" class="Volp-area  homepage-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="Volp-left">
+                        <h2 class="animated wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">What problem will Volp solve?</h2>
+                        <div class="Volp-content">
+                            <p class="animated wow  fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">The scalability and immutability of information that is transacted within any platform that incorporates the protocol, will be ensured through an autonomous management system, along with a security analysis and a constant supervision by the system itself that will sniff and notify in real time all occurrences and anomalies.</p>
+                            <p class="animated wow  fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">With regard to the growing streaming market, cryptocurrency, IoT and etc . The Volp protocol can manage and process large amounts of information simultaneously, with success rates of up to 98% processing.
+
+
+
+<p class="animated wow  fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Our goal is to develop a platform that aggregates multiple services managed by an autonomous protocol through artificial intelligence algorithms.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+	<section class="work_area2 ">
+      <div class="container">
+          <div class="choose-patten-bg">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="section-title">
+                          <h2 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay=".6s">Solutions</h2>
+                      </div>
+                  </div>
+              </div>
+      <div class="aworker__before aworker__bottom_box visible">
+					<div class="aworker__items">
+						<div class="aworker__item">
+              <div class="work-bg">
+                  <img src="assets/img/icons/work-icons-1.png" alt="place your img">
+              </div><br>
+              <a href="http://volpcoin.eu/index.html"  target="_blank"><h4 style="color:#fff" class="wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".6s">Volpcoin</h4><br></a>
+              <p  style="font-size: 11px; color:#fff" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">1st stage beta implementation of the protocol. Where in the current phase, it will be applied in a new version in the platform Volp A.I, giving continuity to the same blockchain.</p>
+						</div>
+						<div class="aworker__item">
+              <div class="work-bg">
+                  <img src="assets/img/icons/work-icons-2.png" alt="place your img">
+              </div><br>
+              <a href="volp_ai.html"  target="_blank"><h4 style="color:#fff" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Volp A.I.</h4><br></a>
+              <p  style="font-size: 11px; color:#fff" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Platform that aggregates multiple services managed by an autonomous protocol through techniques of artificial intelligence algorithms.</p>
+						</div>
+					</div>
+
+
+				</div>
+        <div class="aworker__after aworker__bottom_box visible">
+        					<div class="aworker__items">
+        						<div class="aworker__item">
+                      <div class="work-bg">
+                          <img src="assets/img/icons/work-icons-3.png" alt="place your img">
+                      </div><br>
+                      <h4 style="color:#fff" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s"> Compress Tool</h4><br>
+                      <p  style="font-size: 11px; color:#fff" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Creation of a pilot tool in the area of file transmission where the protocol compression capability does not corrupt the files.</p>
+        						</div>
+        						<div class="aworker__item">
+                      <div class="work-bg">
+                          <img src="assets/img/icons/energy.png" alt="place your img">
+                      </div><br>
+                      <h4  style="color:#fff" class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">IoT </h4><br>
+                      <p  style="font-size: 11px; color:#fff" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Stand-alone application of the Volp protocol, power distribution and storage generation, security system, analysis and real-time statisti</p>
+        						</div>
+        					</div>
+
+        				</div>
+    </section>
+  <section id="roadmap-area" class="roadmap-area homepage-3">
+        <div id="background-14" class="mouse-bg hidden-sm"></div>
+        <div id="background-15" class="mouse-bg hidden-sm"></div>
+        <div id="background-16" class="mouse-bg hidden-sm"></div>
+        <div id="background-17" class="mouse-bg hidden-sm"></div>
+        <div id="background-18" class="mouse-bg hidden-sm"></div>
+        <div id="background-19" class="mouse-bg hidden-sm"></div>
+        <div id="background-20" class="mouse-bg hidden-sm"></div>
+        <div id="background-21" class="mouse-bg hidden-sm"></div>
+        <div id="background-22" class="mouse-bg hidden-sm"></div>
+        <div id="background-23" class="mouse-bg hidden-sm"></div>
+        <div id="background-24" class="mouse-bg hidden-sm"></div>
+        <div id="background-25" class="mouse-bg hidden-sm"></div>
+        <div class="container">
+
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2  style="color: #6048a5;"class="wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">Our Roadmap</h2><span style=" position: absolute;
+top: 12%;
+left: 0;
+width: 100%;
+content: attr(data-content);
+font-size: 90px;
+height: 120px;
+margin-top: -60px;
+line-height: 1;
+z-index: 1;
+font-weight: bold;
+color: rgba(77,9,162,0.05);">ROADMAP</span>
+                            <p  style="color:#3f4779;"class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">Our roadmap gives you a short brief at Volp current development process, what we did and what the future will bring</p>
+
+
+
+            </div><!--section title--><br><br>
+
+		 <div class="row text-center">
+		                 <div class="owl-carousel owl-theme js_road_map " >
+		                     <div class="roadmap-timeline-list">
+		                         <div class="rm-inactive">1st phase pilot deployment</div>
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>Q2 / 2017</b></span></div>
+		                     </div>
+		                     <div class="roadmap-timeline-list alt">
+		                         <div class="rm-date"><span style="color:#33f4779;"><b>Q3 / 2017</b></span></div>
+		                         <div class="rm-inactive2">Launch Volpcoin beta x14 HBE</div>
+		                     </div>
+		                     <div class="roadmap-timeline-list">
+		                         <div class="rm-inactive">Launch official website / Explorer</div>
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>Q4 / 2017</b></span></div>
+		                     </div>
+		                     <div class="roadmap-timeline-list alt">
+		                         <div class="rm-date"><span style="color:#33f4779;"><b>Q4 / 2017</b></span></div>
+		                         <div class="rm-inactive2">Launch Airdrop / Bounty campaign</div>
+		                     </div>
+                   
+		                     <div class="roadmap-timeline-list">
+		                         <div class="rm-inactive">Launch Volp Token (Ardor) / Distribution </div>
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>Q2 / 2018</b></span></div>
+		                     </div>
+                   
+		                     <div class="roadmap-timeline-list alt active">
+		                         <div class="rm-date"><span style="color: #ff9c00;">Q2- Q3 / 2018</span></div>
+		                         <div class="rm-info">Launch Volp Website </div>
+                        
+		                     </div>
+		                     <div class="roadmap-timeline-list  ">
+		              <div class="rm-info">Launch demo Volp A.I Client platform</div>
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>Q3 / 2018</b></span></div>
+		                     </div>
+		                     <div class="roadmap-timeline-list alt">
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>Q3 / 2018</b></span></div>
+		 						 <div class="rm-info">Volpcoin blockchain migration</div>
+		                     </div>
+
+		                     <div class="roadmap-timeline-list ">
+		                   <div class="rm-info">Protocol Update</div>
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>Q3 - Q4 / 2018</b></span></div>
+		                     </div>
+		                     <div class="roadmap-timeline-list alt">
+		                         <div class="rm-date"><span style="color:#3f4779;"><b>2019</b></span></div>
+		 				 <div class="rm-info">Coming Soon</div>
+		                     </div>
+                    
+		                 </div>
+		             </div>
+		         </div>
+		     </section>
+    <!--section end-->
+</div>
+  <section id="token" class="countdown-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="countdown-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
+                        <div class="countdown-table-cell">
+                            <h2  style="color: #031323;    text-align: center;" class="token">Token Details</h2>
+                            <ul class="token-list">
+                                <li style="font-size:20px;color: #031323;">Asset Name : <span> Volpcoin</span></li>
+                                <li style="font-size:20px;color: #031323;">Asset ID : <span>15307894944226771409</span></li>
+                                <li style="font-size:20px;color: #031323;">Quantity :<span>150.000.000 Volp Token</span></li>
+                                <li style="font-size:20px;color: #031323;">Platform :<span>Ardor Platform</span></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	<section class="distribution">
+		<div class="container2">
+      <div class="section-title">
+          <h2 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay=".6s">Volp Distribution </h2><span style="position: absolute;
+top: 6%;
+left: 0;
+width: 100%;
+content: attr(data-content);
+font-size: 90px;
+height: 120px;
+margin-top: -60px;
+line-height: 1;
+z-index: 1;
+font-weight: bold;
+color: rgba(122,15,255,0.08);">DISTRIBUTION</span>
+      </div>
+
+			<div class="distribution__tabs">
+				<div class="distribution__box visible">
+					<div class="distribution__items">
+						<div class="distribution__left">
+							<div class="distribution__item">
+								<p class="distribution__text">Blockchain & Engineering Dev</p>
+								<span class="distribution__label"><img style="max-width:61%" src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDk2IDQ5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDk2IDQ5NjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBjbGFzcz0iIj48Zz48Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMzEyLDQxNmMxMy4yMzIsMCwyNC0xMC43NjgsMjQtMjRzLTEwLjc2OC0yNC0yNC0yNGMtMTAuNDE2LDAtMTkuMjE2LDYuNzEyLTIyLjUyOCwxNkgyNTZ2LTQ4aDMzLjQ3MiAgICAgYzMuMzEyLDkuMjg4LDEyLjExMiwxNiwyMi41MjgsMTZjMTMuMjMyLDAsMjQtMTAuNzY4LDI0LTI0cy0xMC43NjgtMjQtMjQtMjRjLTEwLjQxNiwwLTE5LjIxNiw2LjcxMi0yMi41MjgsMTZIMjU2di00OGgzMy40NzIgICAgIGMzLjMxMiw5LjI4OCwxMi4xMTIsMTYsMjIuNTI4LDE2YzEzLjIzMiwwLDI0LTEwLjc2OCwyNC0yNHMtMTAuNzY4LTI0LTI0LTI0Yy0xMC40MTYsMC0xOS4yMTYsNi43MTItMjIuNTI4LDE2SDI1NnYtMTZoLTE2ICAgICB2LTMzLjQ3MmM5LjI4OC0zLjMxMiwxNi0xMi4xMTIsMTYtMjIuNTI4YzAtMTMuMjMyLTEwLjc2OC0yNC0yNC0yNHMtMjQsMTAuNzY4LTI0LDI0YzAsMTAuNDE2LDYuNzEyLDE5LjIxNiwxNiwyMi41MjhWMjQwaC00OCAgICAgdi0zMy40NzJjOS4yODgtMy4zMTIsMTYtMTIuMTEyLDE2LTIyLjUyOGMwLTEzLjIzMi0xMC43NjgtMjQtMjQtMjRzLTI0LDEwLjc2OC0yNCwyNGMwLDEwLjQxNiw2LjcxMiwxOS4yMTYsMTYsMjIuNTI4VjI0MGgtNDggICAgIHYtMzMuNDcyYzkuMjg4LTMuMzEyLDE2LTEyLjExMiwxNi0yMi41MjhjMC0xMy4yMzItMTAuNzY4LTI0LTI0LTI0cy0yNCwxMC43NjgtMjQsMjRjMCwxMC40MTYsNi43MTIsMTkuMjE2LDE2LDIyLjUyOFYyNDBIODB2MTYgICAgIEg0Ni41MjhjLTMuMzEyLTkuMjg4LTEyLjExMi0xNi0yMi41MjgtMTZjLTEzLjIzMiwwLTI0LDEwLjc2OC0yNCwyNHMxMC43NjgsMjQsMjQsMjRjMTAuNDE2LDAsMTkuMjE2LTYuNzEyLDIyLjUyOC0xNkg4MHY0OCAgICAgSDQ2LjUyOGMtMy4zMTItOS4yODgtMTIuMTEyLTE2LTIyLjUyOC0xNmMtMTMuMjMyLDAtMjQsMTAuNzY4LTI0LDI0czEwLjc2OCwyNCwyNCwyNGMxMC40MTYsMCwxOS4yMTYtNi43MTIsMjIuNTI4LTE2SDgwdjQ4ICAgICBINDYuNTI4Yy0zLjMxMi05LjI4OC0xMi4xMTItMTYtMjIuNTI4LTE2Yy0xMy4yMzIsMC0yNCwxMC43NjgtMjQsMjRzMTAuNzY4LDI0LDI0LDI0YzEwLjQxNiwwLDE5LjIxNi02LjcxMiwyMi41MjgtMTZIODB2MTZoMTYgICAgIHYzMy40NzJjLTkuMjg4LDMuMzEyLTE2LDEyLjExMi0xNiwyMi41MjhjMCwxMy4yMzIsMTAuNzY4LDI0LDI0LDI0czI0LTEwLjc2OCwyNC0yNGMwLTEwLjQxNi02LjcxMi0xOS4yMTYtMTYtMjIuNTI4VjQxNmg0OCAgICAgdjMzLjQ3MmMtOS4yODgsMy4zMTItMTYsMTIuMTEyLTE2LDIyLjUyOGMwLDEzLjIzMiwxMC43NjgsMjQsMjQsMjRzMjQtMTAuNzY4LDI0LTI0YzAtMTAuNDE2LTYuNzEyLTE5LjIxNi0xNi0yMi41MjhWNDE2aDQ4ICAgICB2MzMuNDcyYy05LjI4OCwzLjMxMi0xNiwxMi4xMTItMTYsMjIuNTI4YzAsMTMuMjMyLDEwLjc2OCwyNCwyNCwyNHMyNC0xMC43NjgsMjQtMjRjMC0xMC40MTYtNi43MTItMTkuMjE2LTE2LTIyLjUyOFY0MTZoMTZ2LTE2ICAgICBoMzMuNDcyQzI5Mi43ODQsNDA5LjI4OCwzMDEuNTg0LDQxNiwzMTIsNDE2eiBNMzEyLDM4NGM0LjQxNiwwLDgsMy41ODQsOCw4YzAsNC40MTYtMy41ODQsOC04LDhjLTQuNDE2LDAtOC0zLjU4NC04LTggICAgIEMzMDQsMzg3LjU4NCwzMDcuNTg0LDM4NCwzMTIsMzg0eiBNMzEyLDMyMGM0LjQxNiwwLDgsMy41ODQsOCw4YzAsNC40MTYtMy41ODQsOC04LDhjLTQuNDE2LDAtOC0zLjU4NC04LTggICAgIEMzMDQsMzIzLjU4NCwzMDcuNTg0LDMyMCwzMTIsMzIweiBNMzEyLDI1NmM0LjQxNiwwLDgsMy41ODQsOCw4YzAsNC40MTYtMy41ODQsOC04LDhjLTQuNDE2LDAtOC0zLjU4NC04LTggICAgIEMzMDQsMjU5LjU4NCwzMDcuNTg0LDI1NiwzMTIsMjU2eiBNMjQsMjcyYy00LjQxNiwwLTgtMy41ODQtOC04YzAtNC40MTYsMy41ODQtOCw4LThzOCwzLjU4NCw4LDhDMzIsMjY4LjQxNiwyOC40MTYsMjcyLDI0LDI3MnogICAgICBNMjQsMzM2Yy00LjQxNiwwLTgtMy41ODQtOC04YzAtNC40MTYsMy41ODQtOCw4LThzOCwzLjU4NCw4LDhDMzIsMzMyLjQxNiwyOC40MTYsMzM2LDI0LDMzNnogTTI0LDQwMGMtNC40MTYsMC04LTMuNTg0LTgtOCAgICAgYzAtNC40MTYsMy41ODQtOCw4LThzOCwzLjU4NCw4LDhDMzIsMzk2LjQxNiwyOC40MTYsNDAwLDI0LDQwMHogTTIzMiwxNzZjNC40MTYsMCw4LDMuNTkyLDgsOHMtMy41ODQsOC04LDhzLTgtMy41OTItOC04ICAgICBTMjI3LjU4NCwxNzYsMjMyLDE3NnogTTE2OCwxNzZjNC40MTYsMCw4LDMuNTkyLDgsOHMtMy41ODQsOC04LDhzLTgtMy41OTItOC04UzE2My41ODQsMTc2LDE2OCwxNzZ6IE0xMDQsMTc2ICAgICBjNC40MTYsMCw4LDMuNTkyLDgsOHMtMy41ODQsOC04LDhzLTgtMy41OTItOC04Uzk5LjU4NCwxNzYsMTA0LDE3NnogTTEwNCw0ODBjLTQuNDE2LDAtOC0zLjU4NC04LThjMC00LjQxNiwzLjU4NC04LDgtOCAgICAgczgsMy41ODQsOCw4QzExMiw0NzYuNDE2LDEwOC40MTYsNDgwLDEwNCw0ODB6IE0xNjgsNDgwYy00LjQxNiwwLTgtMy41ODQtOC04YzAtNC40MTYsMy41ODQtOCw4LThzOCwzLjU4NCw4LDggICAgIEMxNzYsNDc2LjQxNiwxNzIuNDE2LDQ4MCwxNjgsNDgweiBNMjMyLDQ4MGMtNC40MTYsMC04LTMuNTg0LTgtOGMwLTQuNDE2LDMuNTg0LTgsOC04czgsMy41ODQsOCw4ICAgICBDMjQwLDQ3Ni40MTYsMjM2LjQxNiw0ODAsMjMyLDQ4MHogTTI0MCw0MDBIOTZWMjU2aDE0NFY0MDB6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM2NThBMzciIGRhdGEtb2xkX2NvbG9yPSIjNjU4YTM3
+Ij48L3BhdGg+CgkJCTxwYXRoIGQ9Ik00NTkuOTYsMTI3Ljk5MlYxMjhjLTIuOTg0LTExLjU2OC03LjU3Ni0yMi42MjQtMTMuNzEyLTMyLjk5MmwyNS41MTItMjUuNTJMNDI2LjUwNCwyNC4yNGwtMjUuNTIsMjUuNTIgICAgIEMzOTAuNjE2LDQzLjYxNiwzNzkuNTY4LDM5LjAyNCwzNjgsMzYuMDRWMGgtNjR2MzYuMDRjLTExLjU2OCwyLjk4NC0yMi42MTYsNy41NzYtMzIuOTg0LDEzLjcxMmwtMjUuNTItMjUuNTJMMjAwLjI0LDY5LjQ4ICAgICBMMjI1Ljc1Miw5NWMtNi4xMzYsMTAuMzY4LTEwLjcyOCwyMS40MjQtMTMuNzEyLDMyLjk5MkgxODR2MTZoNDAuOTQ0bDEuMzA0LTYuNDA4YzIuODQtMTQuMDA4LDguMzM2LTI3LjIzMiwxNi4zMzYtMzkuMzIgICAgIGwzLjYwOC01LjQ0OEwyMjIuODU2LDY5LjQ4bDIyLjYzMi0yMi42MjRsMjMuMzM2LDIzLjMzNmw1LjQ0OC0zLjYwOGMxMi4wOC04LDI1LjMwNC0xMy40OTYsMzkuMzItMTYuMzM2TDMyMCw0OC45NTJWMTZoMzIgICAgIHYzMi45NTJsNi40MDgsMS4zMDRjMTQuMDE2LDIuODQsMjcuMjQsOC4zMzYsMzkuMzIsMTYuMzM2bDUuNDQ4LDMuNjA4bDIzLjMzNi0yMy4zMzZsMjIuNjMyLDIyLjYyNGwtMjMuMzM2LDIzLjMzNmwzLjYwOCw1LjQ0OCAgICAgYzgsMTIuMDg4LDEzLjQ5NiwyNS4zMTIsMTYuMzM2LDM5LjMybDEuMzA0LDYuNDA4SDQ4MHYzMmgtMzIuOTQ0bC0xLjMwNCw2LjQwOGMtMi44NCwxNC4wMDgtOC4zMzYsMjcuMjMyLTE2LjMzNiwzOS4zMTIgICAgIGwtMy42MDgsNS40NTZsMjMuMzM2LDIzLjMzNmwtMjIuNjMyLDIyLjYzMmwtMjMuMzM2LTIzLjMzNmwtNS40NDgsMy42MDhjLTEyLjA4OCw4LTI1LjMxMiwxMy41MDQtMzkuMzIsMTYuMzM2TDM1MiwyNzEuMDU2VjMxMiAgICAgaDE2di0yOC4wNGMxMS41Ni0yLjk3NiwyMi42MTYtNy41NjgsMzIuOTg0LTEzLjcxMmwyNS41MiwyNS41MTJsNDUuMjU2LTQ1LjI1NmwtMjUuNTEyLTI1LjUyICAgICBjNi4xMzYtMTAuMzY4LDEwLjcyOC0yMS40MjQsMTMuNzEyLTMyLjk5Mkg0OTZ2LTY0SDQ1OS45NnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzY1OEEzNyIgZGF0YS1vbGRfY29sb3I9IiM2NThhMzciPjwvcGF0aD4KCQkJPHBhdGggZD0iTTMzNiwyMjR2MTZjNDQuMTEyLDAsODAtMzUuODg4LDgwLTgwcy0zNS44ODgtODAtODAtODBzLTgwLDM1Ljg4OC04MCw4MGgxNmMwLTM1LjI4OCwyOC43MTItNjQsNjQtNjQgICAgIGMzNS4yODgsMCw2NCwyOC43MTIsNjQsNjRDNDAwLDE5NS4yODgsMzcxLjI4OCwyMjQsMzM2LDIyNHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzY1OEEzNyIgZGF0YS1vbGRfY29sb3I9IiM2NThhMzciPjwvcGF0aD4KCQkJPHJlY3QgeD0iMTEyIiB5PSIyNzIiIHdpZHRoPSIxMTIiIGhlaWdodD0iMTYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzY1OEEzNyIgZGF0YS1vbGRfY29sb3I9IiM2NThhMzciPjwvcmVjdD4KCQkJPHJlY3QgeD0iMjA4IiB5PSIzNjgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojNjU4QTM3IiBkYXRhLW9sZF9jb2xvcj0iIzY1OGEzNyI+PC9yZWN0PgoJCQk8cmVjdCB4PSIxMTIiIHk9IjM2OCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjE2IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM2NThBMzciIGRhdGEtb2xkX2NvbG9yPSIjNjU4YTM3Ij48L3JlY3Q+CgkJCTxwYXRoIGQ9Ik0yOTQuNDA4LDQ3NS4zNDRsMy4xODQsMTUuNjg4Yzk3LjY4LTE5LjgzMiwxNzMuNjA4LTk1Ljc2LDE5My40NC0xOTMuNDRsLTE1LjY4OC0zLjE4NCAgICAgQzQ1Ni44MDgsMzg1Ljc4NCwzODUuNzg0LDQ1Ni44MDgsMjk0LjQwOCw0NzUuMzQ0eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojNjU4QTM3IiBkYXRhLW9sZF9jb2xvcj0iIzY1OGEzNyI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjAxLjU5MiwyMC42NDhsLTMuMTg0LTE1LjY4QzEwMC43MjgsMjQuOCwyNC44LDEwMC43MjgsNC45NjgsMTk4LjQwOGwxNS42ODgsMy4xNzYgICAgIEMzOS4xOTIsMTEwLjIyNCwxMTAuMjE2LDM5LjE5MiwyMDEuNTkyLDIwLjY0OHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzY1OEEzNyIgZGF0YS1vbGRfY29sb3I9IiM2NThhMzciPjwvcGF0aD4KCQk8L2c+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==" />
+          		</div>
+							<div class="distribution__item">
+								<p class="distribution__text">Legal</p>
+								<span class="distribution__label"><img  style="max-width:61%"  src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTExLjk5OSA1MTEuOTk5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTk5IDUxMS45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTE3Ljc3NiwxNzQuMzQ1Yy0zLjktMy45LTEwLjI0LTMuOS0xNC4xMzksMGMtMy45MSwzLjkxLTMuOTEsMTAuMjQsMCwxNC4xNGMzLjksMy45MSwxMC4yNCwzLjkxLDE0LjEzOSwwICAgIEMxMjEuNjg1LDE4NC41ODUsMTIxLjY4NSwxNzguMjU1LDExNy43NzYsMTc0LjM0NXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzVFNkIzOCIgZGF0YS1vbGRfY29sb3I9IiM1ZTZiMzgiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTI1My4xOTksNDQ3LjcxOGM0LjQwOS01Ljk3Miw2Ljc5Mi0xMy4xNjcsNi43OTItMjAuNzMyYzAtMTkuMjk4LTE1LjctMzQuOTk5LTM0Ljk5OS0zNC45OTlINTQuOTk4ICAgIGMtOS4zNTMsMC0xOC4xNDIsMy42NC0yNC43NDksMTAuMjQ5Yy02LjYxLDYuNjA4LTEwLjI1LDE1LjM5Ny0xMC4yNSwyNC43NWMwLDcuNzQ5LDIuNTM2LDE0LjkxNSw2LjgxNSwyMC43MiAgICBDMTAuODkxLDQ1Ni4wNzgsMCw0NzIuNzc4LDAsNDkxLjk4M3YxMGMwLDUuNTIzLDQuNDc4LDEwLDEwLDEwaDI1OS45OWM1LjUyMiwwLDEwLTQuNDc3LDEwLTEwdi0xMCAgICBDMjc5Ljk5LDQ3Mi43ODcsMjY5LjExLDQ1Ni4wOTQsMjUzLjE5OSw0NDcuNzE4eiBNNDQuMzksNDE2LjM3NmMyLjgzMS0yLjgzMiw2LjU5OS00LjM5MSwxMC42MDgtNC4zOTFoMTY5Ljk5NCAgICBjOC4yNzEsMCwxNC45OTksNi43MjksMTQuOTk5LDE0Ljk5OWMwLDQuMDEtMS41Niw3Ljc3Ny00LjM5MiwxMC42MDljLTIuODMxLDIuODMyLTYuNTk5LDQuMzkxLTEwLjYwOCw0LjM5MUg1NC45OTggICAgYy04LjI3MSwwLTE0Ljk5OS02LjcyOS0xNC45OTktMTQuOTk5QzM5Ljk5OSw0MjIuOTc2LDQxLjU1OCw0MTkuMjA4LDQ0LjM5LDQxNi4zNzZ6IE0xOS45OTksNDkxLjk4MyAgICBjMC0xNi41NDEsMTMuNDU4LTI5Ljk5OSwyOS45OTktMjkuOTk5aDVoMTY5Ljk5NGg1YzE2LjU0MSwwLDI5Ljk5OSwxMy40NTgsMjkuOTk5LDI5Ljk5OUgxOS45OTl6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM1RTZCMzgiIGRhdGEtb2xkX2NvbG9yPSIjNWU2YjM4Ij48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDIuNjkzLDQyMC4xMjRjLTMuMzk2LTUuMjYzLTcuNDQ4LTkuOTE3LTEyLjA0NS0xMy44MzNsLTQ2LjcyNS00MC43NTNjLTAuMzY0LTAuNTQ4LTAuNzg2LTEuMDY4LTEuMjY5LTEuNTUxICAgIGMtMC44MTItMC44MTEtMS43MzItMS40NDQtMi43MS0xLjkxOGwtMjguMjU3LTI0LjY0NWwtMTMwLjc5LTExNC4wOTFjNS4zNTQtNS41OTcsOC4zMDItMTIuOTE2LDguMzAyLTIwLjY5OSAgICBjMC04LjAxOC0zLjEyMS0xNS41NTMtOC43OTQtMjEuMjI1Yy0yLjQ3NC0yLjQ3MS01LjI4Ni00LjQxNC04LjI5MS01LjgzN2wxMi4xLTEyLjFjMy4zODIsMC44OTksNi44NTcsMS4zNTksMTAuMzM1LDEuMzU5ICAgIGMxMC4yNDEtMC4wMDEsMjAuNDgzLTMuODk5LDI4LjI3OS0xMS42OTVjNy41NTgtNy41NTcsMTEuNzItMTcuNjAyLDExLjcyLTI4LjI4NXMtNC4xNjItMjAuNzI4LTExLjcxOS0yOC4yODVMMjM3Ljk4MSwxMS43MiAgICBjLTcuNTU3LTcuNTU3LTE3LjYwMy0xMS43MTktMjguMjg5LTExLjcxOWMtMTAuNjgxLDAtMjAuNzI0LDQuMTYyLTI4LjI4LDExLjcxOWMtMTAuNDQ0LDEwLjQ0NC0xMy44ODIsMjUuMjczLTEwLjMzNiwzOC42MTUgICAgTDUwLjM1MSwxNzEuMDU5Yy0zLjMzNi0wLjg4Ny02LjgwNy0xLjM1NS0xMC4zNTMtMS4zNTVjLTEwLjY4OCwwLTIwLjcyOSw0LjE1OS0yOC4yOCwxMS43MDkgICAgYy0xNS41OTYsMTUuNTk2LTE1LjU5Niw0MC45NzMsMCw1Ni41N2w4NC44NDcsODQuODQ4YzcuNzk5LDcuNzk4LDE4LjA0MiwxMS42OTcsMjguMjg1LDExLjY5NyAgICBjMTAuMjQ0LDAsMjAuNDg3LTMuODk5LDI4LjI4Ni0xMS42OTdjMTAuNDQ0LTEwLjQ0NSwxMy44ODItMjUuMjczLDEwLjMzNi0zOC42MTVsMTIuMDc1LTEyLjA3NiAgICBjMS40NTEsMy4wMywzLjQyLDUuODI2LDUuODY2LDguMjcxYzUuNjY2LDUuNjY2LDEzLjE5OSw4Ljc4NywyMS4yMTUsOC43ODdjNy43NzUsMCwxNS4wOTEtMi45NDMsMjAuNjk2LTguMjkxTDM2Mi42Myw0NDAuOTYxICAgIGMwLjM4NCwwLjYsMC44MzIsMS4xNzEsMS4zNTYsMS42OTVjMC4xNzksMC4xNzksMC4zNjksMC4zNDIsMC41NTgsMC41MDRsNDEuNTExLDQ3LjY5NGMxLjAzMiwxLjIxOCwyLjEzNSwyLjQxNiwzLjI4LDMuNTYxICAgIGMxMS40MDEsMTEuMzk3LDI2LjQ2LDE3LjU4Miw0Mi4yNywxNy41ODJjMi43ODcsMCw1LjYtMC4xOTIsOC40MTctMC41ODJjMTguODI5LTIuNjA2LDM1LjEwMi0xMy44Nyw0NC42NDQtMzAuOTA4ICAgIEM1MTUuMTE5LDQ2MS44MzQsNTE0LjM0MSw0MzguMTI3LDUwMi42OTMsNDIwLjEyNHogTTE5NS41NTUsMjUuODYyYzMuNzc5LTMuNzc5LDguODAxLTUuODYxLDE0LjEzOC01Ljg2MSAgICBjNS4zNDQsMCwxMC4zNjksMi4wODIsMTQuMTQ3LDUuODYxbDg0Ljg0OCw4NC44NDdjMy43NzksMy43NzksNS44Niw4LjgwMiw1Ljg2LDE0LjE0M2MwLDUuMzQxLTIuMDgxLDEwLjM2NC01Ljg2MSwxNC4xNDMgICAgYy03Ljc5NSw3Ljc5Ny0yMC40ODEsNy43OTctMjguMjc2LDBMMTk1LjU2LDU0LjE0NGMtMC4wMDItMC4wMDItMC4wMDMtMC4wMDMtMC4wMDUtMC4wMDUgICAgQzE4Ny43NTgsNDYuMzQzLDE4Ny43NTgsMzMuNjU4LDE5NS41NTUsMjUuODYyeiBNMTM4Ljk5NCwzMDguNjg5Yy03Ljc5OCw3Ljc5OC0yMC40ODksNy43OTkt
+MjguMjg3LDBMMjUuODYsMjIzLjg0MiAgICBjLTcuNzk5LTcuNzk5LTcuNzk5LTIwLjQ4NywwLTI4LjI4N2MzLjc3Mi0zLjc3Myw4Ljc5NC01Ljg1MSwxNC4xMzgtNS44NTFjNS4zNDMsMCwxMC4zNjIsMi4wNzcsMTQuMTMzLDUuODQ3bDg0Ljg2Miw4NC44NjIgICAgQzE0Ni43OTEsMjg4LjIwOCwxNDYuNzkxLDMwMC44OTQsMTM4Ljk5NCwzMDguNjg5eiBNMTgxLjA5NiwyMzguMzA5bC0yNy45NjEsMjcuOTYybC04NC44NTYtODQuODU2TDE4MS40MTIsNjguMjhsODQuODU1LDg0Ljg1NiAgICBsLTI4LjAxMiwyOC4wMTNjLTAuMDkxLDAuMDg2LTAuMTgsMC4xNy0wLjI3NiwwLjI2NWwtNTYuNTM4LDU2LjUzOUMxODEuMzI0LDIzOC4wNjgsMTgxLjIxMSwyMzguMTg4LDE4MS4wOTYsMjM4LjMwOXogICAgIE0yMTYuODAyLDI1OS4xN2MtMC4wMiwwLjAyLTAuMDM5LDAuMDM5LTAuMDU5LDAuMDU5bC03LjA0Miw3LjA0MmMtMS44ODksMS44ODgtNC40LDIuOTI4LTcuMDc0LDIuOTI4ICAgIGMtMi42NzMsMC01LjE4NS0xLjA0LTcuMDczLTIuOTI5Yy0xLjg5MS0xLjg5LTIuOTMyLTQuNDA0LTIuOTMyLTcuMDc5YzAtMi42MTgsMC45OTktNS4wODEsMi44MTItNi45MzlsNTYuODAxLTU2LjgwMSAgICBjMy44OTMtMy43ODYsMTAuMTg3LTMuNzM5LDE0LjAzNCwwLjEwNGMxLjg5LDEuODksMi45MzEsNC40MDQsMi45MzEsNy4wNzljMCwyLjY3My0xLjAzOCw1LjE4LTIuOTMyLDcuMDY5bC03LjAwMSw3LjAwMSAgICBjLTAuMDQ4LDAuMDQ3LTAuMDk2LDAuMDk1LTAuMTQzLDAuMTQzTDIxNi44MDIsMjU5LjE3eiBNMjM3LjUxLDI2Ni43NDVsMjkuMjI2LTI5LjIyNmwxMjMuNzQyLDEwNy45MzVsLTQ1LjE1NCw0NS4xNTUgICAgTDIzNy41MSwyNjYuNzQ1eiBNMzU4LjQ4NSw0MDUuNzMxbDQ3LjA5OS00Ny4xbDE1LjEwNywxMy4xNzdsLTQ5LjA0NSw0OS4wNDZMMzU4LjQ4NSw0MDUuNzMxeiBNNDg3LjIxNyw0NzAuNzM3ICAgIGMtNi40NTQsMTEuNTIzLTE3LjM2NSwxOS4xMjgtMjkuOTM2LDIwLjg2OGMtMTIuNTQyLDEuNzM2LTI0Ljg2NS0yLjM5NS0zMy44MDctMTEuMzMzYy0wLjc2OS0wLjc2OC0xLjUwNS0xLjU2OS0yLjE5MS0yLjM4MSAgICBjLTAuMDMyLTAuMDM4LTAuMDY0LTAuMDc2LTAuMDk3LTAuMTEzbC0zNi4zOC00MS44MDJsNTAuOTkxLTUwLjk5Mmw0MS43NSwzNi40MTdjMC4wMzEsMC4wMjgsMC4wNjMsMC4wNTUsMC4wOTYsMC4wODMgICAgYzMuMTI1LDIuNjU3LDUuODk4LDUuODQ4LDguMjUxLDkuNDk0QzQ5My40NTYsNDQyLjY2Myw0OTMuOTg2LDQ1OC42NDMsNDg3LjIxNyw0NzAuNzM3eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojNUU2QjM4IiBkYXRhLW9sZF9jb2xvcj0iIzVlNmIzOCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTg4LjQ4NCwxMDMuNjM2Yy0zLjkwNi0zLjkwNS0xMC4yMzYtMy45MDUtMTQuMTQyLDBsLTQyLjQyOCw0Mi40MjhjLTMuOTA1LDMuOTA1LTMuOTA1LDEwLjIzNywwLDE0LjE0MSAgICBjMS45NTMsMS45NTMsNC41MTIsMi45MjksNy4wNzEsMi45MjljMi41NTksMCw1LjExOC0wLjk3Nyw3LjA3MS0yLjkyOWw0Mi40MjgtNDIuNDI4ICAgIEMxOTIuMzg5LDExMy44NzMsMTkyLjM4OSwxMDcuNTQyLDE4OC40ODQsMTAzLjYzNnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzVFNkIzOCIgZGF0YS1vbGRfY29sb3I9IiM1ZTZiMzgiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+" />
+                </div>
+							<div class="distribution__item">
+								<p class="distribution__text">Project Design & Architecture</p>
+								<span class="distribution__label"><img  style="max-width:61%"  src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTExLjk5OSA1MTEuOTk5IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTk5IDUxMS45OTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDUzLjAzNCwzNjEuMzIyYy0yLjgwOC0xLjE2NC02LjA0LTAuNTIxLTguMTksMS42MjhsLTgyLjEyNiw4Mi4xMjZjLTIuMTQ5LDIuMTUtMi43OTIsNS4zODItMS42MjgsOC4xOSAgICBjMS4xNjIsMi44MDksMy45MDQsNC42MzksNi45NDMsNC42MzloODIuMTI2YzQuMTUxLDAsNy41MTUtMy4zNjQsNy41MTUtNy41MTV2LTgyLjEyNiAgICBDNDU3LjY3MywzNjUuMjI1LDQ1NS44NDIsMzYyLjQ4NSw0NTMuMDM0LDM2MS4zMjJ6IE0zODYuMTczLDQ0Mi44NzZsNTYuNDY5LTU2LjQ2OXY1Ni40NjlIMzg2LjE3M3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzQ4MzMwNiIgZGF0YS1vbGRfY29sb3I9IiNBMDc0MTciPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNy4zNjEsMjQwLjg2N2MtMi44MDgtMS4xNjQtNi4wNC0wLjUyMS04LjE5LDEuNjI4bC0yMi41MDcsMjIuNTA3VjExMS45NzFjMC00LjE1MS0zLjM2NS03LjUxNS03LjUxNS03LjUxNWgtNTcuNzQxICAgIGwyMC45Ni0yMC45NmMwLjAwMy0wLjAwMywwLjAwNi0wLjAwNywwLjAwOS0wLjAxbDIwLjE5Ni0yMC4xOTZjNC4zMjctNC4zMjcsNi43MS0xMC4wODMsNi43MS0xNi4yMDNzLTIuMzgzLTExLjg3NC02LjcxLTE2LjIwMyAgICBMNDI5LjIxOSw3LjUzYy00LjMyNy00LjMyNy0xMC4wODMtNi43MS0xNi4yMDMtNi43MXMtMTEuODc1LDIuMzgzLTE2LjIwMyw2LjcxbC0yMC4yMDYsMjAuMjA2bC0yNC40MTYsMjQuNDE2bC01Mi4zMDMsNTIuMzAzICAgIEg2Ni42MlYzMC4xMWMwLTQuMTUxLTMuMzY1LTcuNTE1LTcuNTE1LTcuNTE1QzI2LjUxNSwyMi41OTcsMCw0OS4xMSwwLDgxLjcwMnYzMTkuMTg2YzAsMC41NTUsMC4wNjQsMS4wOTUsMC4xNzgsMS42MTUgICAgYzEuMDM4LDEzLjgyOSw3LjAyMSwyNi42NzgsMTcuMDIsMzYuNDMyQzI3Ljg4Niw0NDkuMzU5LDQxLjk5NSw0NTUuMSw1Ni45MjcsNDU1LjFoMjI5LjYzOGwtNDMuMjQ5LDQzLjI0OSAgICBjLTIuMTQ5LDIuMTUtMi43OTIsNS4zODEtMS42MjksOC4xOWMxLjE2MywyLjgwOCwzLjkwNCw0LjYzOSw2Ljk0Myw0LjYzOWgyNTUuODU1YzQuMTUsMCw3LjUxNS0zLjM2NCw3LjUxNS03LjUxNVYyNDcuODEgICAgQzUxMiwyNDQuNzcxLDUxMC4xNjgsMjQyLjAzLDUwNy4zNjEsMjQwLjg2N3ogTTQwNy40NDMsMTguMTU5YzMuMDcyLTMuMDc0LDguMDc3LTMuMDc0LDExLjE0OSwwbDIzLjM1NSwyMy4zNTUgICAgYzMuMDc0LDMuMDczLDMuMDc0LDguMDc2LDAsMTEuMTVsLTE0Ljg5MSwxNC44OTJMMzkyLjU1LDMzLjA1MUw0MDcuNDQzLDE4LjE1OXogTTM4MS45MjIsNDMuNjc5bDM0LjUwNSwzNC41MDRsLTEzLjc4OSwxMy43ODkgICAgbC0zNC41MDMtMzQuNTA0TDM4MS45MjIsNDMuNjc5eiBNNDk2Ljk3MiwzMzIuMjUyaC0xMy44NjVjLTQuMTUxLDAtNy41MTUsMy4zNjQtNy41MTUsNy41MTVjMCw0LjE1MSwzLjM2NCw3LjUxNSw3LjUxNSw3LjUxNSAgICBoMTMuODY1djIyLjY0NmgtMTMuODY1Yy00LjE1MSwwLTcuNTE1LDMuMzY0LTcuNTE1LDcuNTE1czMuMzY0LDcuNTE1LDcuNTE1LDcuNTE1aDEzLjg2NXYyMi42NDVoLTEzLjg2NSAgICBjLTQuMTUxLDAtNy41MTUsMy4zNjQtNy41MTUsNy41MTVjMCw0LjE1MSwzLjM2NCw3LjUxNSw3LjUxNSw3LjUxNWgxMy44NjV2MjIuNjQ2aC0xMy44NjVjLTQuMTUxLDAtNy41MTUsMy4zNjUtNy41MTUsNy41MTUgICAgYzAsNC4xNTEsMy4zNjQsNy41MTUsNy41MTUsNy41MTVoMTMuODY1djM1Ljg0MmgtMjMwLjJsNzUuOTA4LTc1LjkwN2MyLjkzNS0yLjkzNiwyLjkzNS03LjY5MywwLTEwLjYyOCAgICBjLTAuMzM3LTAuMzM3LTAuNjk5LTAuNjI5LTEuMDc4LTAuODg5Yy0yLjkyNi0yLjAwNC02Ljk1Mi0xLjcwOS05LjU1MSwwLjg4OWwtMzAuNDU2LDMwLjQ1Nkg1Ni45MjggICAgYy0yMi43OTIsMC00MS4xNC0xNy43OTQtNDEuODYyLTQwLjU0NWMwLjA0My0xLjQyOCwwLjE1NC0yLjg0NCwwLjMzMi00LjI0NGMwLjAwMS0wLjAwOCwwLjAwMi0wLjAxNiwwLjAwMy0wLjAyNCAgICBjMC4wODQtMC42NjUsMC4xODUtMS4zMjcsMC4zLTEuOTg1YzAuMDEzLTAuMDc1LDAuMDI3LTAuMTUsMC4wNC0wLjIyNWMwLjEwNS0wLjU4NywwLjIyMy0xLjE3MSwwLjM1Mi0xLjc1MyAgICBjMC4wMzYtMC4xNjIsMC4wNzQtMC4zMjQsMC4xMTItMC40ODVjMC4xMTQtMC40OTIsMC4yMzctMC45ODEsMC4zNjktMS40NjhjMC4wNzItMC4yNjQsMC4xNDctMC41MjUsMC4yMjQtMC43ODggICAgYzAuMTEtMC4zODIsMC4yMjQtMC43NjMsMC4zNDUtMS4xNGMwLjEyMS0wLjM3NywwLjI1LTAuNzUsMC4zODEtMS4xMjNjMC4wOTEtMC4yNjEsMC4xODEtMC41MjIsMC4yNzktMC43ODEgICAgYzAuMTgzLTAuNDkyLDAuMzc3LTAuOTc5LDAuNTc3LTEuNDYyYzAuMDU3LTAuMTM5LDAuMTEzLTAuMjgsMC4xNzItMC40MTljMC4yNTctMC42LDAuNTI0LTEuMTkzLDAuODA2LTEuNzc5ICAgIGMwLjAxMi0wLjAyNSwwLjAyMy0wLjA1LDAuMDM1LTAuMDc1YzUuODc4LTEyLjE2NCwxNy4xODMtMjEuMjMzLDMwLjc1LTI0LjA0N2MwLjAzOC0wLjAwOCwwLjA3Ni0wLjAxNywwLjExNC0wLjAyNSAgICBjMC42MjItMC4xMjcsMS4yNS0wLjIzNiwxLjg4Mi0wLjMzN2MwLjEwNS0wLjAxNywwLjIxLTAuMDM4LDAuMzE3LTAuMDU0YzAuNTcxLTAuMDg3LDEuMTQ4LTAuMTU1LDEuNzI1LTAuMjIgICAgYzAuMTYyLTAuMDE4LDAuMzIzLTAuMDQzLDAuNDg2LTAuMDU5YzAuNTU3LTAuMDU2LDEuMTE5LTAuMDkzLDEuNjgxLTAuMTI4YzAuMTc4LTAuMDExLDAuMzU2LTAu
+MDMsMC41MzQtMC4wMzkgICAgYzAuNzM2LTAuMDM3LDEuNDc4LTAuMDU2LDIuMjIzLTAuMDU2YzQuMTUsMCw3LjUxNS0zLjM2NCw3LjUxNS03LjUxNXYtNTQuNDg5YzAtNC4xNTEtMy4zNjUtNy41MTUtNy41MTUtNy41MTUgICAgYy00LjE1LDAtNy41MTUsMy4zNjQtNy41MTUsNy41MTV2NDcuNDQ3Yy0xMi42OSwxLjYwNS0yNC40NjksNy4yNjUtMzMuNzU3LDE2LjMzNWMtMC45NzcsMC45NTQtMS45MDMsMS45NDYtMi44MDUsMi45NTRWODEuNzAyICAgIGMwLTIxLjc0MSwxNS44MjYtMzkuODU4LDM2LjU2MS00My40MzZ2NzMuNzA1djE1Mi43Nzd2MC4wMDFjMCw0LjE1LDMuMzY1LDcuNTE1LDcuNTE1LDcuNTE1YzQuMTUsMCw3LjUxNS0zLjM2NSw3LjUxNS03LjUxNSAgICB2LTAuMDAxVjExOS40ODZoMjE4LjI0bC00MS41NDQsNDEuNTQ0Yy0yLjkzNSwyLjkzNi0yLjkzNSw3LjY5MywwLDEwLjYyOGMyLjkzNSwyLjkzNCw3LjY5MywyLjkzNCwxMC42MjcsMGw1NC4zNzMtNTQuMzczICAgIGMwLjAwMi0wLjAwMiwwLjAwMy0wLjAwNCwwLjAwNS0wLjAwNWw0OS4xODUtNDkuMTg1bDM0LjUwMywzNC41MDVsLTQuMDQ4LDQuMDQ4Yy0wLjAwMywwLjAwMy0wLjAwNywwLjAwNi0wLjAxLDAuMDA5ICAgIGwtMTUxLjUyOCwxNTEuNTNsLTM0LjUwNC0zNC41MDRsMjkuODY4LTI5Ljg2OGMyLjkzNS0yLjkzNiwyLjkzNS03LjY5MywwLTEwLjYyOGMtMi45MzUtMi45MzQtNy42OTMtMi45MzQtMTAuNjI3LDAgICAgbC0zNS4xODMsMzUuMTgyYy0wLjE4OCwwLjE4OC0wLjM2NCwwLjM4Ny0wLjUyOSwwLjU5MWMtMC4wNTUsMC4wNjgtMC4xMDQsMC4xNDEtMC4xNTYsMC4yMTJjLTAuMTA2LDAuMTQxLTAuMjEsMC4yODMtMC4zMDcsMC40MzEgICAgYy0wLjA1NSwwLjA4Ni0wLjEwNSwwLjE3NC0wLjE1NywwLjI2M2MtMC4wODMsMC4xNC0wLjE2MywwLjI4Mi0wLjIzNiwwLjQyN2MtMC4wNDgsMC4wOTQtMC4wOTEsMC4xODktMC4xMzUsMC4yODcgICAgYy0wLjA2NywwLjE0Ny0wLjEyOSwwLjI5Ny0wLjE4NiwwLjQ0N2MtMC4wMiwwLjA1My0wLjA0NiwwLjEwMy0wLjA2NSwwLjE1NmwtMTQuNjQxLDQxLjQ3NWwtOS45ODIsMjguMjc5ICAgIGMtMC4xMzIsMC4zNzYtMC4yMjcsMC43NTgtMC4yOTgsMS4xNDNoLTI0Ljk5MmMtNC4xNSwwLTcuNTE1LDMuMzY0LTcuNTE1LDcuNTE1YzAsNC4xNTEsMy4zNjUsNy41MTUsNy41MTUsNy41MTVoMjA4LjExNCAgICBjNC4xNTEsMCw3LjUxNS0zLjM2NCw3LjUxNS03LjUxNWMwLTQuMTUxLTMuMzY0LTcuNTE1LTcuNTE1LTcuNTE1SDE5My4wOTNsNDUuODMtMTYuMTc4YzAuMDM4LTAuMDE0LDAuMDc0LTAuMDMzLDAuMTEyLTAuMDQ3ICAgIGMwLjE3OC0wLjA2NiwwLjM1My0wLjE0LDAuNTI2LTAuMjE5YzAuMDY5LTAuMDMyLDAuMTM4LTAuMDYyLDAuMjA1LTAuMDk1YzAuMTgtMC4wOSwwLjM1Ny0wLjE4OSwwLjUzMS0wLjI5NSAgICBjMC4wNTYtMC4wMzQsMC4xMTQtMC4wNjUsMC4xNjktMC4xYzAuMTgxLTAuMTE2LDAuMzU3LTAuMjQzLDAuNTMtMC4zNzdjMC4wNDMtMC4wMzMsMC4wODgtMC4wNjIsMC4xMy0wLjA5NiAgICBjMC4yMDktMC4xNjgsMC40MTQtMC4zNDksMC42MDgtMC41NDNsMTU0LjY0NC0xNTQuNjQzaDY1LjI1NXYxNjAuNTQ2TDM1NC4xMzcsMzg3LjUzYy0yLjkzNSwyLjkzNi0yLjkzNSw3LjY5MywwLDEwLjYyOCAgICBjMC4xODMsMC4xODMsMC4zNzQsMC4zNTUsMC41NzEsMC41MTZjMS4zNzgsMS4xMjMsMy4wNjEsMS42ODUsNC43NDMsMS42ODVzMy4zNjYtMC41NjIsNC43NDMtMS42ODUgICAgYzAuMTk3LTAuMTYsMC4zODgtMC4zMzMsMC41NzEtMC41MTZjMC4wMDMtMC4wMDMsMCwwLDAuMDAzLTAuMDAzTDQ5Ni45NzIsMjY1Ljk1VjMzMi4yNTJ6IE0yMjIuNjc3LDI2NS42OTZsLTIxLjUyNiw3LjU5OSAgICBsLTE0LjM0Mi0xNC4zNDJsNy41OTktMjEuNTI2TDIyMi42NzcsMjY1LjY5NnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzQ4MzMwNiIgZGF0YS1vbGRfY29sb3I9IiNBMDc0MTciPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+" />
+                	</div>
+              <div class="distribution__item distribution__item__new">
+                <p class="distribution__text">Marketing <br></p>
+                <span class="distribution__label"><img  style="max-width: 61%;"  src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTkxLjI4OSwxNjIuMTFjLTEuODYtMS44NTktNC40NC0yLjkzLTcuMDctMi45M3MtNS4yMSwxLjA3LTcuMDcsMi45M2MtMS44NiwxLjg2LTIuOTMsNC40NC0yLjkzLDcuMDcgICAgYzAsMi42MywxLjA3LDUuMjEsMi45Myw3LjA3YzEuODYsMS44NTksNC40NCwyLjkzLDcuMDcsMi45M3M1LjIxLTEuMDcsNy4wNy0yLjkzYzEuODYtMS44NiwyLjkzLTQuNDMxLDIuOTMtNy4wNyAgICBDMTk0LjIxOSwxNjYuNTUsMTkzLjE0OSwxNjMuOTcsMTkxLjI4OSwxNjIuMTF6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MDguNTkyLDI5NS4zM2wtNzEuMTQzLTcxLjE0MmMxNS4zODEtMjIuMDgzLDEzLjI0Ny01Mi43NS02LjQzNC03Mi40MzFjLTEwLjcwMy0xMC43MDMtMjQuOTM0LTE2LjU5OC00MC4wNy0xNi41OTggICAgYy0xMS43NDYsMC0yMi45MzksMy41NjQtMzIuMzY5LDEwLjE1NmwtNzEuMTM1LTcxLjEzNWMtMi4zNS0yLjM1LTUuNzExLTMuMzgxLTguOTc0LTIuNzQ2Yy0zLjI2MiwwLjYzMi01Ljk5NywyLjg0My03LjI5OCw1LjkgICAgTDc0LjA4OCwzMDUuMzQ0bC01Mi42NzMsNTIuNjc0QzcuNjA1LDM3MS44MjksMCwzOTAuMTkxLDAsNDA5LjcyMWMwLDE5LjUzMSw3LjYwNSwzNy44OTMsMjEuNDE2LDUxLjcwMiAgICBjMTMuODEsMTMuODExLDMyLjE3MiwyMS40MTYsNTEuNzAyLDIxLjQxNmMxOS41MzEsMCwzNy44OTItNy42MDUsNTEuNzAyLTIxLjQxNmw4LjU1Ni04LjU1Nmw1Ni4yMDQsNTYuMjA0ICAgIGMxLjk1MywxLjk1Miw0LjUxMiwyLjkyOSw3LjA3MSwyLjkyOWMyLjU1OSwwLDUuMTE5LTAuOTc3LDcuMDcxLTIuOTI5bDM4LjQxMS0zOC40MTFjMy45MDUtMy45MDUsMy45MDUtMTAuMjM3LDAtMTQuMTQzICAgIGwtNTIuNzg2LTUyLjc4NmwyMTYuMDk3LTkyLjEyOWMzLjA1NS0xLjMwMyw1LjI2NS00LjAzOCw1Ljg5Ni03LjI5OUM0MTEuOTcsMzAxLjA0MSw0MTAuOTQxLDI5Ny42NzksNDA4LjU5MiwyOTUuMzN6ICAgICBNMjkwLjk0NiwxNTUuMTYxYzkuNzk0LDAsMTkuMDAyLDMuODE0LDI1LjkyOCwxMC43NGMxMS44NDUsMTEuODQ0LDEzLjg2NiwyOS44NCw2LjA4Myw0My43OTVsLTQ5Ljg4OS00OS44ODkgICAgQzI3OC40NzEsMTU2Ljc4LDI4NC41ODIsMTU1LjE2MSwyOTAuOTQ2LDE1NS4xNjF6IE0xMTAuNjc3LDQ0Ny4yOGMtMTAuMDMzLDEwLjAzMy0yMy4zNzIsMTUuNTU5LTM3LjU2LDE1LjU1OSAgICBzLTI3LjUyNy01LjUyNS0zNy41Ni0xNS41NTlDMjUuNTI1LDQzNy4yNDcsMjAsNDIzLjkwOSwyMCw0MDkuNzIxYzAtMTQuMTg4LDUuNTI1LTI3LjUyNywxNS41NTgtMzcuNTZsNDYuOTcyLTQ2Ljk3M2wxLjQzMiwxLjQzMiAgICBsNzMuNjg0LDczLjY5M0wxMTAuNjc3LDQ0Ny4yOHogTTIyMC45Miw0NjMuNTg4bC0yNC4yNywyNC4yNjhsLTQ5LjEzMi00OS4xMzJsMjQuMjY5LTI0LjI2OEwyMjAuOTIsNDYzLjU4OHogTTM0NC44MjEsMzE1LjcwNCAgICBjLTAuMTgtMC4yMTMtMC4zNjQtMC40MjQtMC41NjQtMC42MjRMMjE3LjU4OCwxODguNDExYy0zLjkwNS0zLjkwNC0xMC4yMzctMy45MDQtMTQuMTQzLDBjLTMuOTA1LDMuOTA1LTMuOTA1LDEwLjIzNywwLDE0LjE0MyAgICBsMTIxLjU4NywxMjEuNTg3bC0xNTAuOTIzLDY0LjM0NEw5NC4zNzUsMzA4Ljc1bDg5LjM5NS0yMDkuOTU1bDIwMC4yMTMsMjAwLjIxMkwzNDQuODIxLDMxNS43MDR6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik00MTUuMDczLDY4LjI1OWMtMy45MDYtMy45MDMtMTAuMjM3LTMuOTA0LTE0LjE0MiwwbC0yNi44MzcsMjYuODM3Yy0zLjkwNSwzLjkwNS0zLjkwNiwxMC4yMzcsMCwxNC4xNDMgICAgYzEuOTUzLDEuOTUzLDQuNTExLDIuOTI5LDcuMDcxLDIuOTI5YzIuNTU5LDAsNS4xMTktMC45NzcsNy4wNzEtMi45MjlsMjYuODM3LTI2LjgzNyAgICBDNDE4Ljk3OCw3OC40OTYsNDE4Ljk3OSw3Mi4xNjQsNDE1LjA3Myw2OC4yNTl6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zNjMuNjg4LDExOS42NGMtMS44Ni0xLjg1OS00LjQzLTIuOTMtNy4wNy0yLjkzYy0yLjYzLDAtNS4yMSwxLjA3LTcuMDcsMi45M3MtMi45Myw0LjQ0LTIuOTMsNy4wN3MxLjA3LDUuMjEsMi45Myw3LjA3ICAgIGMxLjg3LDEuODYsNC40NCwyLjkzLDcuMDcsMi45M3M1LjIxLTEuMDcsNy4wNy0yLjkzYzEuODctMS44NiwyLjkzLTQuNDQsMi45My03LjA3UzM2NS41NTgsMTIxLjUsMzYzLjY4OCwxMTkuNjR6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zMDEuMzQ5LDI4LjU4Yy01LjUyMywwLTEwLDQuNDc4LTEwLDEwdjM2Ljc1MmMwLDUuNTIyLDQuNDc3LDkuOTk5LDEwLDkuOTk5YzUuNTIzLDAsMTAtNC40NzgsMTAtMTBWMzguNTggICAgQzMxMS4zNDksMzMuMDU4LDMwNi44NzIsMjguNTgsMzAxLjM0OSwyOC41OHoiIGRh
+dGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzM1NjMxQSIgZGF0YS1vbGRfY29sb3I9IiMzNTYzMWEiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ0NC41NjMsMTcwLjQxMmgtMzcuOTgxYy01LjUyMywwLTEwLDQuNDc4LTEwLDEwczQuNDc3LDEwLDEwLDEwaDM3Ljk4MWM1LjUyMywwLDEwLTQuNDc4LDEwLTEwICAgIFM0NTAuMDg2LDE3MC40MTIsNDQ0LjU2MywxNzAuNDEyeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMzU2MzFBIiBkYXRhLW9sZF9jb2xvcj0iIzM1NjMxYSI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDMwLjIxNSwzOTguNzM0Yy0xNi41NDIsMC0zMCwxMy40NTgtMzAsMzBjMCwxNi41NDIsMTMuNDU4LDMwLDMwLDMwYzE2LjU0MiwwLDMwLTEzLjQ1OCwzMC0zMCAgICBDNDYwLjIxNSw0MTIuMTkyLDQ0Ni43NTcsMzk4LjczNCw0MzAuMjE1LDM5OC43MzR6IE00MzAuMjE1LDQzOC43MzNjLTUuNTE0LDAtMTAtNC40ODYtMTAtMTBzNC40ODYtMTAsMTAtMTBzMTAsNC40ODYsMTAsMTAgICAgUzQzNS43MjksNDM4LjczMyw0MzAuMjE1LDQzOC43MzN6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik01MDguNyw0NDMuNTI1bC0xMC43ODUtOS43NDJjMC4xMjUtMS42ODMsMC4xODgtMy4zNjksMC4xODgtNS4wNWMwLTEuNjgxLTAuMDYzLTMuMzY3LTAuMTg4LTUuMDVsMTAuNzg1LTkuNzQyICAgIGMzLjUwMi0zLjE2Myw0LjMxNi04LjM0MywxLjk1My0xMi40MjhsLTE2LjY3OS0yOC44MzdjLTIuMzU5LTQuMDgtNy4yNDctNS45NTgtMTEuNzMxLTQuNTA5bC0xMy44MDMsNC40NiAgICBjLTIuNzktMS45MDQtNS43MTMtMy41OTUtOC43NTEtNS4wNjFsLTMuMDQxLTE0LjE5NGMtMC45ODgtNC42MTEtNS4wNjMtNy45MDUtOS43NzgtNy45MDVINDEzLjU2ICAgIGMtNC43MTYsMC04Ljc5MSwzLjI5NC05Ljc3OCw3LjkwNWwtMy4wNDEsMTQuMTk0Yy0zLjAzOCwxLjQ2Ni01Ljk2MSwzLjE1Ni04Ljc1MSw1LjA2MWwtMTMuODAzLTQuNDYgICAgYy00LjQ4Ny0xLjQ0OS05LjM3MiwwLjQzMS0xMS43MzEsNC41MDlsLTE2LjY3OSwyOC44MzdjLTIuMzYyLDQuMDg1LTEuNTQ4LDkuMjY1LDEuOTUzLDEyLjQyOGwxMC43ODUsOS43NDIgICAgYy0wLjEyNSwxLjY4My0wLjE4OCwzLjM2OS0wLjE4OCw1LjA1YzAsMS42ODEsMC4wNjMsMy4zNjcsMC4xODgsNS4wNWwtMTAuNzg1LDkuNzQyYy0zLjUwMSwzLjE2My00LjMxNSw4LjM0My0xLjk1MywxMi40MjggICAgbDE2LjY3OSwyOC44MzhjMi4zNTksNC4wOCw3LjI0Nyw1Ljk1NywxMS43MzEsNC41MDlsMTMuODAzLTQuNDYxYzIuNzkxLDEuOTA1LDUuNzE0LDMuNTk2LDguNzUxLDUuMDYybDMuMDQxLDE0LjE5MyAgICBjMC45ODgsNC42MTEsNS4wNjMsNy45MDUsOS43NzgsNy45MDVoMzMuMzExYzQuNzE2LDAsOC43OTEtMy4yOTQsOS43NzgtNy45MDVsMy4wNDEtMTQuMTkzYzMuMDM3LTEuNDY2LDUuOTYtMy4xNTYsOC43NTEtNS4wNjIgICAgbDEzLjgwMyw0LjQ2MWM0LjQ4NiwxLjQ0OCw5LjM3Mi0wLjQzMSwxMS43MzEtNC41MDlsMTYuNjc5LTI4LjgzOEM1MTMuMDE1LDQ1MS44NjgsNTEyLjIwMSw0NDYuNjg4LDUwOC43LDQ0My41MjV6ICAgICBNNDgwLjcwNyw0NjcuNzgzbC0xMS4wMTUtMy41NmMtMy4yMTgtMS4wMzktNi43NDEtMC4zODItOS4zNjksMS43NDRjLTMuOTA4LDMuMTY1LTguMjU3LDUuNjgxLTEyLjkyNCw3LjQ3NSAgICBjLTMuMTU0LDEuMjEzLTUuNDgxLDMuOTM2LTYuMTg5LDcuMjM5bC0yLjQyNCwxMS4zMTZoLTE3LjE0MmwtMi40MjQtMTEuMzE2Yy0wLjcwOC0zLjMwNC0zLjAzNi02LjAyNi02LjE4OS03LjIzOSAgICBjLTQuNjY3LTEuNzk0LTkuMDE2LTQuMzEtMTIuOTI0LTcuNDc1Yy0yLjYyNy0yLjEyOC02LjE1Mi0yLjc4NC05LjM2OS0xLjc0NGwtMTEuMDE1LDMuNTZsLTguNTgzLTE0Ljg0MWw4LjU5My03Ljc2MiAgICBjMi41MDQtMi4yNjIsMy42OTgtNS42MzQsMy4xNzctOC45NjhjLTAuMzg2LTIuNDY2LTAuNTgyLTQuOTgyLTAuNTgyLTcuNDhjMC0yLjQ5OCwwLjE5Ni01LjAxNSwwLjU4Mi03LjQ4ICAgIGMwLjUyMS0zLjMzNC0wLjY3My02LjcwNi0zLjE3Ny04Ljk2OGwtOC41OTMtNy43NjJsOC41ODMtMTQuODQxbDExLjAxNSwzLjU2YzMuMjE3LDEuMDQsNi43NDIsMC4zODMsOS4zNjgtMS43NDQgICAgYzMuOTA3LTMuMTY0LDguMjU1LTUuNjc5LDEyLjkyNS03LjQ3NmMzLjE1My0xLjIxMyw1LjQ4LTMuOTM2LDYuMTg4LTcuMjM4bDIuNDI0LTExLjMxNmgxNy4xNDJsMi40MjQsMTEuMzE2ICAgIGMwLjcwOCwzLjMwMywzLjAzNSw2LjAyNSw2LjE4OCw3LjIzOGM0LjY3LDEuNzk3LDkuMDE5LDQuMzEyLDEyLjkyNSw3LjQ3NmMyLjYyNywyLjEyNyw2LjE1LDIuNzgyLDkuMzY4LDEuNzQ0bDExLjAxNS0zLjU2ICAgIGw4LjU4MywxNC44NDFsLTguNTkzLDcuNzYyYy0yLjUwMiwyLjI2Mi0zLjY5Niw1LjYzNC0zLjE3NSw4Ljk2OGMwLjM4NiwyLjQ2NiwwLjU4Miw0Ljk4MiwwLjU4Miw3LjQ4ICAgIGMwLDIuNDk4LTAuMTk2LDUuMDE1LTAuNTgyLDcuNDhjLTAuNTIxLDMuMzM0LDAuNjczLDYuNzA2LDMuMTc3LDguOTY4bDguNTkzLDcuNzYyTDQ4MC43MDcsNDY3Ljc4M3oiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzM1NjMxQSIgZGF0YS1vbGRfY29sb3I9IiMzNTYzMWEiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTUxMS4yMTEsNzQuNzc4bC0yOC45OS02OC42NjZjLTEuNTYzLTMuNzAzLTUuMTkzLTYuMTEtOS4yMTMtNi4xMWMtNC4wMiwwLTcuNjQ5LDIuNDA3LTkuMjEzLDYuMTFsLTI4Ljk4OSw2OC42NjcgICAgYy0yLjE0OCw1LjA4OCwwLjIzNSwxMC45NTQsNS4zMjQsMTMuMTAyYzEuMjcsMC41MzYsMi41ODgsMC43OSwz
+Ljg4NSwwLjc5YzMuODk5LDAsNy42MDUtMi4yOTYsOS4yMTctNi4xMTNsMy42MjctOC41OTFoMzIuMjk5ICAgIGwzLjYyNyw4LjU5MWMyLjE0OCw1LjA4Nyw4LjAxNCw3LjQ3MSwxMy4xMDIsNS4zMjNDNTEwLjk3NSw4NS43MzIsNTEzLjM1OSw3OS44NjYsNTExLjIxMSw3NC43Nzh6IE00NjUuMzAyLDUzLjk2N2w3LjcwNi0xOC4yNTQgICAgbDcuNzA2LDE4LjI1NEg0NjUuMzAyeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMzU2MzFBIiBkYXRhLW9sZF9jb2xvcj0iIzM1NjMxYSI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTA3Ljc2LDAuMDAySDI0LjIzOUMxMC44NzQsMC4wMDEsMCwxMC44NzQsMCwyNC4yNHY3My41M2MwLDEzLjM2NSwxMC44NzQsMjQuMjM5LDI0LjIzOSwyNC4yMzloODMuNTIyICAgIGMxMy4zNjUsMCwyNC4yMzktMTAuODc0LDI0LjIzOS0yNC4yMzlWMjQuMjRDMTMxLjk5OSwxMC44NzUsMTIxLjEyNSwwLjAwMiwxMDcuNzYsMC4wMDJ6IE0xMTEuOTk5LDk3Ljc2OSAgICBjMCwyLjMzOC0xLjkwMSw0LjIzOS00LjIzOSw0LjIzOUgyNC4yMzljLTIuMzM3LDAtNC4yMzktMS45MDEtNC4yMzktNC4yMzlWMjQuMjRjMC0yLjMzNywxLjkwMS00LjIzOCw0LjIzOS00LjIzOGg4My41MjIgICAgYzIuMzM3LDAsNC4yMzksMS45MDEsNC4yMzksNC4yMzhWOTcuNzY5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMzU2MzFBIiBkYXRhLW9sZF9jb2xvcj0iIzM1NjMxYSI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNODMuNjQxLDQyLjU2NGwtMTUuMjI3LTguNzkxYy02LjY2Ny0zLjg0OS0xNC42MjgtMy44NS0yMS4yOTUsMGMtNi42NjcsMy44NS0xMC42NDgsMTAuNzQzLTEwLjY0OCwxOC40NDJ2MTcuNTgyICAgIGMwLjAwMSw3LjY5OSwzLjk4MiwxNC41OTIsMTAuNjQ5LDE4LjQ0MmMzLjMzMywxLjkyNSw2Ljk5LDIuODg3LDEwLjY0NywyLjg4N3M3LjMxNC0wLjk2MiwxMC42NDctMi44ODdsMTUuMjI3LTguNzkxICAgIGM2LjY2Ny0zLjg1LDEwLjY0OC0xMC43NDQsMTAuNjQ4LTE4LjQ0MkM5NC4yODgsNTMuMzA4LDkwLjMwOCw0Ni40MTMsODMuNjQxLDQyLjU2NHogTTczLjY0Miw2Mi4xMjdsLTE1LjIyNyw4Ljc5MSAgICBjLTAuMTc3LDAuMTAzLTAuNjQ4LDAuMzc0LTEuMjk1LDBjLTAuNjQ4LTAuMzc0LTAuNjQ4LTAuOTE3LTAuNjQ4LTEuMTIyVjUyLjIxNGMwLTAuMjA1LDAtMC43NDgsMC42NDgtMS4xMjIgICAgYzAuMjQ3LTAuMTQzLDAuNDY4LTAuMTkxLDAuNjU3LTAuMTkxYzAuMzA3LDAsMC41MjksMC4xMjgsMC42MzgsMC4xOTFsMTUuMjI3LDguNzkxYzAuMTc3LDAuMTAzLDAuNjQ4LDAuMzc0LDAuNjQ4LDEuMTIyICAgIFM3My44MTksNjIuMDI1LDczLjY0Miw2Mi4xMjd6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik02Ni4wNSwyMTcuOTY5aC03LjIxN2MtNS41MjMsMC0xMCw0LjQ3OC0xMCwxMHM0LjQ3NywxMCwxMCwxMGg3LjIxN2M1LjUyMywwLDEwLTQuNDc4LDEwLTEwICAgIFM3MS41NzMsMjE3Ljk2OSw2Ni4wNSwyMTcuOTY5eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMzU2MzFBIiBkYXRhLW9sZF9jb2xvcj0iIzM1NjMxYSI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzguMDI1LDE5MC4yNWMtNS41MjMsMC0xMCw0LjQ3OC0xMCwxMHY2LjM2MmMwLDUuNTIyLDQuNDc3LDEwLDEwLDEwczEwLTQuNDc4LDEwLTEwdi02LjM2MiAgICBDNDguMDI1LDE5NC43MjgsNDMuNTQ4LDE5MC4yNSwzOC4wMjUsMTkwLjI1eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMzU2MzFBIiBkYXRhLW9sZF9jb2xvcj0iIzM1NjMxYSI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMTYuMzYzLDIxNy45NjlIMTBjLTUuNTIzLDAtMTAsNC40NzgtMTAsMTBzNC40NzcsMTAsMTAsMTBoNi4zNjNjNS41MjMsMCwxMC00LjQ3OCwxMC0xMFMyMS44ODYsMjE3Ljk2OSwxNi4zNjMsMjE3Ljk2OXogICAgIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0zOC4wMjUsMjM5Yy01LjUyMywwLTEwLDQuNDc4LTEwLDEwdjcuMzAxYzAsNS41MjIsNC40NzcsMTAsMTAsMTBzMTAtNC40NzgsMTAtMTBWMjQ5ICAgIEM0OC4wMjUsMjQzLjQ3OCw0My41NDgsMjM5LDM4LjAyNSwyMzl6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiMzNTYzMUEiIGRhdGEtb2xkX2NvbG9yPSIjMzU2MzFhIj48L3BhdGg+Cgk8L2c+CjwvZz48L2c+IDwvc3ZnPg==" /></span>             </div>
+						</div>
+						<div class="distribution__middle">
+							<div class="distribution__item">
+								<p class="distribution__text">Team</p>
+								<span class="distribution__label"><img  style="max-width:61%" src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNDI0IDQyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDI0IDQyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yMTIsMTI2LjU2Yy00Ni44OCwwLTc2LDI0LTc2LDYyLjg4YzAsNC40MTgsMy41ODIsOCw4LDhoMTM2YzQuNDE4LDAsOC0zLjU4Miw4LThDMjg4LDE1MC42NCwyNTguODgsMTI2LjU2LDIxMiwxMjYuNTZ6ICAgICBNMTUyLjU2LDE4MS40NGM1LjI4LTM1LjkyLDQ2LjMyLTM4Ljg4LDU5LjQ0LTM4Ljg4czU0LjE2LDIuOTYsNTkuNDQsMzguODhIMTUyLjU2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMUQzQzU4IiBkYXRhLW9sZF9jb2xvcj0iIzFkM2M1OCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjEyLDQyLjU2Yy0yMC45ODcsMC0zOCwxNy4wMTMtMzgsMzhjMC4wNDQsMjAuOTY5LDE3LjAzMSwzNy45NTYsMzgsMzhjMjAuOTg3LDAsMzgtMTcuMDEzLDM4LTM4ICAgIFMyMzIuOTg3LDQyLjU2LDIxMiw0Mi41NnogTTIxMiwxMDIuNTZjLTEyLjE1LDAtMjItOS44NS0yMi0yMnM5Ljg1LTIyLDIyLTIyczIyLDkuODUsMjIsMjJTMjI0LjE1LDEwMi41NiwyMTIsMTAyLjU2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMUQzQzU4IiBkYXRhLW9sZF9jb2xvcj0iIzFkM2M1OCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNzYsMzEwLjU2Yy00Ni44OCwwLTc2LDI0LTc2LDYyLjg4YzAsNC40MTgsMy41ODIsOCw4LDhoMTM2YzQuNDE4LDAsOC0zLjU4Miw4LThDMTUyLDMzNC42NCwxMjIuODgsMzEwLjU2LDc2LDMxMC41NnogICAgIE0xNi41NiwzNjUuNDRjNS4yOC0zNS45Miw0Ni4yNC0zOC44OCw1OS40NC0zOC44OHM1NC4xNiwyLjk2LDU5LjQ0LDM4Ljg4SDE2LjU2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMUQzQzU4IiBkYXRhLW9sZF9jb2xvcj0iIzFkM2M1OCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNzYsMjI2LjU2Yy0yMC45ODcsMC0zOCwxNy4wMTMtMzgsMzhjMC4wNDQsMjAuOTY5LDE3LjAzMSwzNy45NTYsMzgsMzhjMjAuOTg3LDAsMzgtMTcuMDEzLDM4LTM4ICAgIFM5Ni45ODcsMjI2LjU2LDc2LDIyNi41NnogTTc2LDI4Ni41NmMtMTIuMTUsMC0yMi05Ljg1LTIyLTIyczkuODUtMjIsMjItMjJzMjIsOS44NSwyMiwyMlM4OC4xNSwyODYuNTYsNzYsMjg2LjU2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojMUQzQzU4IiBkYXRhLW9sZF9jb2xvcj0iIzFkM2M1OCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQ4LDMxMC41NmMtNDYuODgsMC03NiwyNC03Niw2Mi44OGMwLDQuNDE4LDMuNTgyLDgsOCw4aDEzNmM0LjQxOCwwLDgtMy41ODIsOC04QzQyNCwzMzQuNjQsMzk0Ljg4LDMxMC41NiwzNDgsMzEwLjU2eiAgICAgTTI4OC41NiwzNjUuNDRjNS4yOC0zNS45Miw0Ni4yNC0zOC44OCw1OS40NC0zOC44OHM1NC4xNiwyLjk2LDU5LjQ0LDM4Ljg4SDI4OC41NnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzFEM0M1OCIgZGF0YS1vbGRfY29sb3I9IiMxZDNjNTgiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTM0OCwyMjYuNTZjLTIwLjk4NywwLTM4LDE3LjAxMy0zOCwzOGMwLjA0NCwyMC45NjksMTcuMDMxLDM3Ljk1NiwzOCwzOGMyMC45ODcsMCwzOC0xNy4wMTMsMzgtMzggICAgUzM2OC45ODcsMjI2LjU2LDM0OCwyMjYuNTZ6IE0zNDgsMjg2LjU2Yy0xMi4xNSwwLTIyLTkuODUtMjItMjJzOS44NS0yMiwyMi0yMnMyMiw5Ljg1LDIyLDIyUzM2MC4xNSwyODYuNTYsMzQ4LDI4Ni41NnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzFEM0M1OCIgZGF0YS1vbGRfY29sb3I9IiMxZDNjNTgiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTI1My4zNiwyOTYuNzJMMjIwLDI2My4yVjIxNmMwLTQuNDE4LTMuNTgyLTgtOC04cy04LDMuNTgyLTgsOHY0Ny4ybC0zMy4zNiwzMy4zNmMtMy4xNTksMy4xMTUtMy4xOTUsOC4yMDEtMC4wOCwxMS4zNiAgICBzOC4yMDEsMy4xOTUsMTEuMzYsMC4wOEwyMTIsMjc3Ljg0TDI0Mi4wOCwzMDhjMy4zNTYsMi44NzQsOC40MDYsMi40ODMsMTEuMjgtMC44NzMgICAgQzI1NS45MjUsMzA0LjEzMiwyNTUuOTI1LDI5OS43MTUsMjUzLjM2LDI5Ni43MnoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzFEM0M1OCIgZGF0YS1vbGRfY29sb3I9IiMxZDNjNTgiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+" /></span>
+							</div>
+						</div>
+						<div class="distribution__right">
+							<div class="distribution__item">
+								<span class="distribution__label"><img  style="max-width:61%" src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzg0LjAwMSAzODQuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzODQuMDAxIDM4NC4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzA5LjUyLDBINzQuNDhjLTguODM3LDAtMTYsNy4xNjMtMTYsMTZ2MzA5LjI4YzAsOC44MzcsNy4xNjMsMTYsMTYsMTZoMjQuODhWMzc2YzAsNC40MTgsMy41ODEsOCw3Ljk5OSw4LjAwMSAgICBjMi4zMzksMCw0LjU2MS0xLjAyMyw2LjA4MS0yLjgwMWwxNy42LTIwLjQ4bDE3LjYsMjAuNDhjMi44NzIsMy4zNTgsNy45MjIsMy43NTIsMTEuMjc5LDAuODgxICAgIGMxLjc3Ny0xLjUyLDIuODAxLTMuNzQyLDIuODAxLTYuMDgxdi0zNC43MmgxNDYuOGM4LjgzNywwLDE2LTcuMTYzLDE2LTE2VjE2QzMyNS41Miw3LjE2MywzMTguMzU3LDAsMzA5LjUyLDB6IE0xMzcuMTIsMzQyLjk2ICAgIGMtMi44NzItMy4zNTgtNy45MjItMy43NTItMTEuMjc5LTAuODgxYy0wLjMxNiwwLjI3LTAuNjEsMC41NjUtMC44ODEsMC44ODFsLTkuNiwxMS4ydi0zMC40YzEwLjEwNywzLjgwNywyMS4yNTMsMy44MDcsMzEuMzYsMCAgICBsMCwzMC40TDEzNy4xMiwzNDIuOTZ6IE0xNjAuMDgsMjgxLjJjMC4wMDEsMTYuMDkxLTEyLjk1LDI5LjE4NS0yOS4wNCwyOS4zNmgtMC4zMmMtMTYuMjE1LDAtMjkuMzYtMTMuMTQ1LTI5LjM2LTI5LjM2ICAgIGMwLTE2LjIxNSwxMy4xNDUtMjkuMzYsMjkuMzYtMjkuMzZTMTYwLjA4LDI2NC45ODUsMTYwLjA4LDI4MS4yQzE2MC4wOCwyODEuMiwxNjAuMDgsMjgxLjIsMTYwLjA4LDI4MS4yeiBNMzA5LjEyLDMyNS4yaC0xNDYuNCAgICB2LTExLjZjMTcuOTI5LTE3LjQ5NiwxOC4yOC00Ni4yMTUsMC43ODQtNjQuMTQ0Yy0xNy40OTYtMTcuOTI5LTQ2LjIxNS0xOC4yOC02NC4xNDQtMC43ODQgICAgYy0xNy45MjksMTcuNDk2LTE4LjI4LDQ2LjIxNS0wLjc4NCw2NC4xNDRjMC4yNTgsMC4yNjUsMC41MTksMC41MjYsMC43ODQsMC43ODR2MTEuNkg3NC40OFYxNmgyMzUuMDRMMzA5LjEyLDMyNS4yeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojODI3NTFDIiBkYXRhLW9sZF9jb2xvcj0iIzgyNzUxYyI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjYxLjUyLDYzLjI4SDEyMi40OGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGgxMzkuMDRjNC40MTgsMCw4LTMuNTgyLDgtOFMyNjUuOTM5LDYzLjI4LDI2MS41Miw2My4yOHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzgyNzUxQyIgZGF0YS1vbGRfY29sb3I9IiM4Mjc1MWMiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTI2MS41MiwxMDkuMjhIMTIyLjQ4Yy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4aDEzOS4wNGM0LjQxOCwwLDgtMy41ODIsOC04UzI2NS45MzksMTA5LjI4LDI2MS41MiwxMDkuMjh6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM4Mjc1MUMiIGRhdGEtb2xkX2NvbG9yPSIjODI3NTFjIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yNjEuNTIsMTU1LjI4SDEyMi40OGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGgxMzkuMDRjNC40MTgsMCw4LTMuNTgyLDgtOFMyNjUuOTM5LDE1NS4yOCwyNjEuNTIsMTU1LjI4eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojODI3NTFDIiBkYXRhLW9sZF9jb2xvcj0iIzgyNzUxYyI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMjYxLjUyLDIwMS4yOEgxMjIuNDhjLTQuNDE4LDAtOCwzLjU4Mi04LDhzMy41ODIsOCw4LDhoMTM5LjA0YzQuNDE4LDAsOC0zLjU4Miw4LThTMjY1LjkzOSwyMDEuMjgsMjYxLjUyLDIwMS4yOHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzgyNzUxQyIgZGF0YS1vbGRfY29sb3I9IiM4Mjc1MWMiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTI2MS41MiwyNDcuMjhIMTk4Yy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4aDYzLjUyYzQuNDE4LDAsOC0zLjU4Miw4LThTMjY1LjkzOSwyNDcuMjgsMjYxLjUyLDI0Ny4yOHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzgyNzUxQyIgZGF0YS1vbGRfY29sb3I9IiM4Mjc1MWMiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+" /></span>
+								<p class="distribution__text">Regulatory</p>
+							</div>
+							<div class="distribution__item">
+								<span class="distribution__label"><img style="max-width:61%" src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMi4wMDMgNTEyLjAwMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyLjAwMyA1MTIuMDAzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiPjxnPjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwOS42MDUsMTcxLjA3NWwtOTkuMy05OS4zMDFjLTMuMTkzLTMuMTk0LTguMzctMy4xOTQtMTEuNTY1LDBsLTQ5LjY1LDQ5LjY1Yy0xLjUzMywxLjUzMy0yLjM5NCwzLjYxMy0yLjM5NCw1Ljc4MiAgICBjMCwyLjE2OSwwLjg2MSw0LjI0OSwyLjM5NCw1Ljc4Mmw0Ljk1Myw0Ljk1M2wtMTEuMzgyLDExLjM4Yy03LjM4OSw3LjM4Ni0xOC44NTQsOS40MDItMjguNTI4LDUuMDExICAgIGMtOS4wNy00LjExNy0xOS4xNTMtNi4yOTItMjkuMTYxLTYuMjkyYy0xMS44ODMsMC0yMy40OTYsMi45ODMtMzMuODE0LDguNjMzYy00LjMwMy0xLjA2LTguNzE5LTEuNjAzLTEzLjE3OS0xLjYwMyAgICBjLTYuNDUsMC0xMi43ODUsMS4xMTMtMTguODI5LDMuMzFjLTkuNjUxLDMuNTA2LTE5Ljk5NiwxLjMzMy0yNy4wMDMtNS42NzJMMTcxLjcxLDEzMi4yN2wyLjQzNC0yLjQzNCAgICBjMS41MzMtMS41MzMsMi4zOTQtMy42MTMsMi4zOTQtNS43ODJjMC0yLjE2OS0wLjg2MS00LjI0OS0yLjM5NC01Ljc4MmwtNDkuNjUtNDkuNjVjLTMuMTk1LTMuMTk0LTguMzcxLTMuMTk0LTExLjU2NSwwICAgIEwyLjM5NSwxNzkuMTU2Yy0zLjE5MywzLjE5NC0zLjE5Myw4LjM3MSwwLDExLjU2NGw0OS42NDksNDkuNjVjMS41MzQsMS41MzQsMy42MTMsMi4zOTUsNS43ODMsMi4zOTVzNC4yNDgtMC44NjEsNS43ODMtMi4zOTUgICAgbDIuOTYxLTIuOTYxbDE0LjQxNCwxNC40MTRjMy42MzcsMy42MzcsNi4wNDgsOC4xNzgsNi45NzEsMTMuMTMxYzQuNzg2LDI1LjY4MywxNy4wODYsNDkuMDMyLDM1LjU3LDY3LjUyNmwyLjcxNSwyLjcxNSAgICBjLTUuMjE0LDUuNDkxLTguMDgyLDEyLjY0NS04LjA4MiwyMC4yNDVjMCw3Ljg2MSwzLjA2MiwxNS4yNTIsOC42MiwyMC44MTFjNS43MzgsNS43MzgsMTMuMjczLDguNjA2LDIwLjgxMSw4LjYwNiAgICBjMC40OTEsMCwwLjk4LTAuMDEzLDEuNDcxLTAuMDM4Yy0wLjM5OCw4LjAxOSwyLjQ1OCwxNi4xNyw4LjU2OCwyMi4yODJjNS41NTksNS41NTksMTIuOTUsOC42MiwyMC44MTEsOC42MiAgICBjMC4yMTksMCwwLjQzNy0wLjAxMSwwLjY1Ni0wLjAxNmMtMC4xNjgsNy43NDksMi42OTEsMTUuNTUyLDguNTkxLDIxLjQ1M2M1LjU1OSw1LjU2LDEyLjk1LDguNjIsMjAuODEyLDguNjIgICAgYzcuODYxLDAsMTUuMjUxLTMuMDYyLDIwLjgxMS04LjYyYzAuNDY4LTAuNDY4LDAuOTA5LTAuOTUyLDEuMzQtMS40NDJjMi44OTUsMS4wMDksNS45NTcsMS41NDYsOS4wNTIsMS41NDYgICAgYzcuMzUzLDAsMTQuMjYxLTIuODY1LDE5LjQ0MS04LjA2MmMyLjc1Ny0yLjc1Niw0Ljg0OS01Ljk5OCw2LjIxMS05LjUyOWwwLjgzNywwLjgzN2M1LjM1OSw1LjM1OSwxMi4zOTgsOC4wMzksMTkuNDM3LDguMDM5ICAgIGM3LjAzOSwwLDE0LjA3OC0yLjY4LDE5LjQzNy04LjAzOWMyLjg0OC0yLjg0OCw0Ljk4OC02LjIxMSw2LjM0NC05Ljg3OGM0Ljc5NywzLjQ4OSwxMC40NzYsNS4yMzYsMTYuMTU4LDUuMjM2ICAgIGM3LjAzOSwwLDE0LjA4Mi0yLjY3OSwxOS40NDYtOC4wMzZjNS4xOTEtNS4xOTEsOC4wNS0xMi4wOTcsOC4wNS0xOS40NDVjMC0yLjIyLTAuMjY2LTQuMzk3LTAuNzczLTYuNTAyICAgIGM1LjIzNy0xLjA2NCwxMC4wNDktMy42MzUsMTMuOTEtNy41MDFjNS4xOTEtNS4xOTEsOC4wNS0xMi4wOTQsOC4wNS0xOS40MzdjMC01Ljc4NS0xLjc4Mi0xMS4yOTItNS4wNzMtMTUuOTFsNi41Ni02LjU2ICAgIGMxOC42OTktMTguNzA4LDMxLjA1Mi00Mi4zNSwzNS43MjUtNjguMzcxYzAuNzgzLTQuMzU3LDIuOTQxLTguNDA0LDYuMjQzLTExLjcwN2wyNC4zOTgtMjQuMzk4bDQuMjg5LDQuMjg5ICAgIGMxLjU5NywxLjU5NywzLjY5LDIuMzk1LDUuNzgzLDIuMzk1YzIuMDkyLDAsNC4xODYtMC43OTgsNS43ODMtMi4zOTVsNDkuNjUtNDkuNjVjMS41MzMtMS41MzMsMi4zOTQtMy42MTMsMi4zOTQtNS43ODIgICAgUzUxMS4xMzgsMTcyLjYwOSw1MDkuNjA1LDE3MS4wNzV6IE01Ny44MjcsMjIzLjAyNWwtMzguMDg2LTM4LjA4NkwxMTguNzEsODUuOTdsMzguMDg3LDM4LjA4Nkw1Ny44MjcsMjIzLjAyNXogTTE1Ni44MzYsMzY0LjY4OSAgICBjLTUuMDk3LDUuMDk2LTEzLjM5Miw1LjA5OC0xOC40OTMsMGMtMi40Ny0yLjQ3MS0zLjgzLTUuNzU0LTMuODMtOS4yNDdjMC0zLjQ5MiwxLjM2MS02Ljc3NiwzLjgzMS05LjI0NiAgICBjMi41NDktMi41NDksNS44OTYtMy44MjQsOS4yNDUtMy44MjRjMy4zNDgsMCw2LjY5OCwxLjI3NSw5LjI0NiwzLjgyNEMxNjEuOTMzLDM1MS4yOTQsMTYxLjkzMywzNTkuNTksMTU2LjgzNiwzNjQuNjg5eiAgICAgTTE4Ny42ODQsMzk1LjUzN2MtMi40NjgsMi40NzEtNS43NTEsMy44My05LjI0NiwzLjgzYy0zLjQ5MiwwLTYuNzc2LTEuMzYxLTkuMjQ1LTMuODNjLTUuMDk5LTUuMDk4LTUuMDk5LTEzLjM5NCwwLTE4LjQ5MyAgICBjMi41NDktMi41NDksNS44OTYtMy44MjQsOS4yNDYtMy44MjRjMy4zNDcsMCw2LjY5NywxLjI3NSw5LjI0NSwzLjgyNEMxOTIuNzg0LDM4Mi4xNDIsMTkyLjc4NCwzOTAuNDM5LDE4Ny42ODQsMzk1LjUzN3ogICAgIE0yMTcuNzQyLDQyNS41OTRjLTIuNDcsMi40Ny01Ljc1MywzLjgzLTkuMjQ1LDMuODNjLTMuNDkzLDAtNi43NzctMS4zNjEtOS4yNDYtMy44M2MtNS4wOTktNS4wOTgtNS4wOTktMTMuMzk0LDAtMTguNDkzICAgIGMyLjU0OS0yLjU0OSw1Ljg5Ni0zLjgyNCw5LjI0Ni0zLjgyNGMzLjM0NywwLDYuNjk3LDEuMjc1LDkuMjQ1LDMuODI0QzIyMi44NDEsNDEyLjIsMjIyLjg0MSw0MjAuNDk2LDIxNy43NDIsNDI1LjU5NHogICAgIE0zNTYuNjMsMzYyLjgyMmMtMi4xMDIsMi4xMDQtNC44OTcs
+My4yNjMtNy44NjksMy4yNjNzLTUuNzY3LTEuMTU5LTcuODczLTMuMjY4bC03OS4zMy03OS4zMTIgICAgYy0zLjE5Ni0zLjE5My04LjM3Mi0zLjE5Mi0xMS41NjUsMC4wMDJjLTMuMTkyLDMuMTkzLTMuMTkxLDguMzcxLDAuMDAyLDExLjU2NGw4NS40NTEsODUuNDQyYzIuMTAzLDIuMTAyLDMuMjYsNC44OTgsMy4yNiw3Ljg3MiAgICBjMCwyLjk4LTEuMTU4LDUuNzc5LTMuMjU3LDcuODc4Yy00LjM0Nyw0LjM0My0xMS40MTYsNC4zNDQtMTUuNzU2LDAuMDAzbC0xNC40MTYtMTQuNDE2Yy0wLjA4LTAuMDgzLTAuMTU4LTAuMTY3LTAuMjQxLTAuMjQ5ICAgIGMtMC4wMjQtMC4wMjQtMC4wNTEtMC4wNDUtMC4wNzYtMC4wNjlsLTY2LjI2Ny02Ni4yNjdjLTMuMTk1LTMuMTkzLTguMzcxLTMuMTkzLTExLjU2NSwwYy0zLjE5NCwzLjE5My0zLjE5NCw4LjM3MSwwLDExLjU2NCAgICBsNjYuNDgsNjYuNDc5YzIuMDMyLDIuMDgzLDMuMTUxLDQuODM5LDMuMTUxLDcuNzYzYzAsMi45NzQtMS4xNTksNS43Ny0zLjI2MSw3Ljg3MmMtNC4zMzgsNC4zNDEtMTEuNDAxLDQuMzQxLTE1Ljc0MywwICAgIGwtNzIuMDg1LTcyLjA4NmMtMy4xOTUtMy4xOTQtOC4zNzEtMy4xOTQtMTEuNTY1LDBjLTMuMTk0LDMuMTkzLTMuMTk0LDguMzcxLDAsMTEuNTY0bDUzLjQzNCw1My40MzUgICAgYzAuMDE1LDAuMDE1LDAuMDI3LDAuMDMyLDAuMDQzLDAuMDQ2YzIuMTAxLDIuMDk3LDMuMjU3LDQuODg4LDMuMjU3LDcuODU5YzAsMi45NzMtMS4xNTgsNS43NjktMy4yNjksNy44OCAgICBjLTIuMDk5LDIuMTA0LTQuODkzLDMuMjYzLTcuODcsMy4yNjNjLTAuNzE5LDAtMS40MjItMC4wNzQtMi4xMS0wLjIwNGMxLjMyMy04LjkxMy0xLjQzNi0xOC4zMi04LjI4Mi0yNS4xNjcgICAgYy01LjU1OS01LjU1OC0xMi45NS04LjYyLTIwLjgxMS04LjYyYy0wLjIxOSwwLTAuNDM3LDAuMDExLTAuNjU2LDAuMDE2YzAuMTY4LTcuNzQ5LTIuNjktMTUuNTUyLTguNTkxLTIxLjQ1MyAgICBjLTUuNTYtNS41NTgtMTIuOTUtOC42Mi0yMC44MTItOC42MmMtMC40OTIsMC0wLjk4MSwwLjAxMi0xLjQ2OSwwLjAzNmMwLjM5My04LjAxNC0yLjQ2My0xNi4xNTgtOC41Ny0yMi4yNjYgICAgYy03LjQzNC03LjQzMy0xNy44ODQtMTAuMDQ0LTI3LjQ0NC03Ljg0N2wtNS44NjQtNS44NjRjLTE2LjE0LTE2LjE0Ny0yNi44NzgtMzYuNTM1LTMxLjA1Ny01OC45NiAgICBjLTEuNTMxLTguMjEzLTUuNTAyLTE1LjcxNy0xMS40ODMtMjEuNjk5bC0xNC40MTUtMTQuNDE1bDgyLjAxLTgyLjAxbDIwLjQzOCwyMC40MzhjNy44NTYsNy44NTYsMTguNTUyLDEyLjA2LDI5LjUwNywxMi4wNiAgICBjNC45MDYsMCw5Ljg2Ny0wLjg0NCwxNC42NDYtMi41ODFjMi4zMTgtMC44NDMsNC43MTUtMS40NDgsNy4xNDQtMS44MzJsLTUwLjYzMiw1MC42MzNjLTYuMTk1LDYuMTk0LTkuNjA3LDE0LjQzLTkuNjA3LDIzLjE5MSAgICBjMCw4Ljc2LDMuNDEyLDE2Ljk5Niw5LjYwNiwyMy4xOWM2LjM5NCw2LjM5NCwxNC43OSw5LjU5LDIzLjE5LDkuNTg5YzguMzk4LDAsMTYuNzk3LTMuMTk4LDIzLjE5Mi05LjU4OWwyNS40My0yNS40M2w2Ljg4Myw2Ljg4OCAgICBjMC4wMDIsMC4wMDIsMC4wMDMsMC4wMDMsMC4wMDUsMC4wMDVsMC4yODYsMC4yODZsMC4yNzUsMC4yNzVjMC4wMDEsMC4wMDEsMC4wMDMsMC4wMDMsMC4wMDUsMC4wMDRsMC4wMDUsMC4wMDUgICAgYzAuMDc5LDAuMDc4LDAuMTU2LDAuMTUyLDAuMjMzLDAuMjI2bDk1Ljg4MSw5NS44ODFjMi4xMDMsMi4xMDIsMy4yNiw0Ljg5OCwzLjI2LDcuODcyICAgIEMzNTkuODkzLDM1Ny45MjEsMzU4LjczNiwzNjAuNzE3LDM1Ni42MywzNjIuODIyeiBNNDA4LjEzNywyNDAuODM0Yy01LjY3NCw1LjY3NS05LjQsMTIuNzIzLTEwLjc3NCwyMC4zODEgICAgYy00LjA4LDIyLjcyLTE0Ljg2Nyw0My4zNjQtMzEuMTkzLDU5LjY5OGwtNi4yODQsNi4yODVsLTUxLjczMS01MS43MzFjMS4xMjQsMC4wODMsMi4yNTMsMC4xMzgsMy4zOSwwLjEzOCAgICBjNS4yMzgsMCwxMC41OTgtMC45MTgsMTUuOTM0LTMuMTAxYzQuMTgtMS43MSw2LjE4Mi02LjQ4NSw0LjQ3Mi0xMC42NjRjLTEuNzEtNC4xNzktNi40ODEtNi4xODItMTAuNjY0LTQuNDcyICAgIGMtMjEuMDQ2LDguNjExLTQ2LjI3OC0xNS4xMi00OS4wODctMTcuODU1Yy0wLjA0Ny0wLjA0Ni0wLjA5NC0wLjA5MS0wLjE0Mi0wLjEzNWwtMC4yOS0wLjI5ICAgIGMtMC4wMDEtMC4wMDEtMC4wMDItMC4wMDEtMC4wMDMtMC4wMDJsLTAuMjUzLTAuMjUyYy0wLjAwMS0wLjAwMS0wLjAwMy0wLjAwMy0wLjAwNS0wLjAwNGwtNi44ODQtNi44ODlsNy44MDYtNy44MDcgICAgYzMuMTk1LTMuMTk0LDMuMTk1LTguMzcxLDAuMDAxLTExLjU2NWMtMy4xOTQtMy4xOTItOC4zNzEtMy4xOTMtMTEuNTY0LDBsLTEzLjU3LDEzLjU3Yy0wLjAwNSwwLjAwNS0wLjAxMSwwLjAxLTAuMDE2LDAuMDE1ICAgIGMtMC4wMDUsMC4wMDUtMC4wMSwwLjAxMS0wLjAxNSwwLjAxNmwtMzEuMiwzMS4yYy02LjQxMiw2LjQxMS0xNi44NDIsNi40MDktMjMuMjUyLDBjLTMuMTA1LTMuMTA1LTQuODE1LTcuMjM0LTQuODE1LTExLjYyNiAgICBjMC00LjM5MiwxLjcxLTguNTIxLDQuODE2LTExLjYyNmw1My44NTItNTMuODU0YzIuOTk2LTIuOTk1LDYuMzI2LTUuNjMsOS45MDUtNy44MzdjOC41MDMtNS4yNTYsMTguMzI0LTguMDM0LDI4LjQwMS04LjAzNCAgICBjNy42OTMsMCwxNS40MzksMS42NywyMi40MDMsNC44MzFjMTUuODQyLDcuMTg4LDM0LjY3MSwzLjgzOSw0Ni44NTEtOC4zMzhsMTEuMzgzLTExLjM4MWw2Ni45MjksNjYuOTI5TDQwOC4xMzcsMjQwLjgzNHogICAgIE00NTQuMTcyLDIxNC45NDRsLTg3LjczNi04Ny43MzZsMzguMDg3LTM4LjA4Nmw4Ny43MzYsODcuNzM2TDQ1NC4xNzIsMjE0Ljk0NHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzhDNDg2RSIgZGF0YS1vbGRfY29sb3I9IiM4YzQ4NmUiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPGNpcmNsZSBjeD0iNDYyLjQxIiBjeT0iMTgzLjExIiByPSI4LjE3NyIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1w
+YXRoIiBzdHlsZT0iZmlsbDojOEM0ODZFIiBkYXRhLW9sZF9jb2xvcj0iIzhjNDg2ZSI+PC9jaXJjbGU+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxjaXJjbGUgY3g9IjUzLjU2NyIgY3k9IjE5MS4xODkiIHI9IjguMTc3IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM4QzQ4NkUiIGRhdGEtb2xkX2NvbG9yPSIjOGM0ODZlIj48L2NpcmNsZT4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+" /></span>
+								<p class="distribution__text">Bussiness Dev</p>
+							</div>
+							<div class="distribution__item">
+								<span class="distribution__label"><img  style="max-width:61%" src="data:image/svg+xml;base64,
+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyLjAwMSA1MTIuMDAxIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIuMDAxIDUxMi4wMDE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGc+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzQxLjk1NCwzMjguMzU4Yy0xMi4xMzEsMC0yMi04LjU0Mi0yMi0xOS4wNDFjMC0xMC41LDkuODY5LTE5LjA0MiwyMi0xOS4wNDJjMTIuMTMxLDAsMjIsOC41NDIsMjIsMTkuMDQyICAgIGMwLDUuNTIyLDQuNDc4LDEwLDEwLDEwYzUuNTIyLDAsMTAtNC40NzgsMTAtMTBjMC0xOC4zMjUtMTMuNjU0LTMzLjczMy0zMi0zNy45MTV2LTUuMjAxYzAtNS41MjItNC40NzgtMTAtMTAtMTAgICAgYy01LjUyMiwwLTEwLDQuNDc4LTEwLDEwdjUuMjAxYy0xOC4zNDYsNC4xODItMzIsMTkuNTktMzIsMzcuOTE1YzAsMjEuNTI3LDE4Ljg0MSwzOS4wNDEsNDIsMzkuMDQxYzEyLjEzMSwwLDIyLDguNTQyLDIyLDE5LjA0MiAgICBzLTkuODY5LDE5LjA0Mi0yMiwxOS4wNDJjLTEyLjEzMSwwLTIyLTguNTQyLTIyLTE5LjA0MmMwLTUuNTIyLTQuNDc4LTEwLTEwLTEwYy01LjUyMiwwLTEwLDQuNDc4LTEwLDEwICAgIGMwLDE4LjMyNSwxMy42NTQsMzMuNzMzLDMyLDM3LjkxNXY0LjMyYzAsNS41MjIsNC40NzgsMTAsMTAsMTBjNS41MjIsMCwxMC00LjQ3OCwxMC0xMHYtNC4zMmMxOC4zNDYtNC4xODIsMzItMTkuNTksMzItMzcuOTE1ICAgIEMzODMuOTU0LDM0NS44NzIsMzY1LjExMywzMjguMzU4LDM0MS45NTQsMzI4LjM1OHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzZGMkUzRCIgZGF0YS1vbGRfY29sb3I9IiM2ZjJlM2QiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTQ1MS40ODIsMjY4Ljg3NmMtMTMuMDYzLTIwLjM1NS0zMS40NjctMzYuNjQzLTUzLjIyMi00Ny4xMDFjLTQuOTc5LTIuMzk0LTEwLjk1NC0wLjI5OC0xMy4zNDYsNC42OCAgICBjLTIuMzkzLDQuOTc4LTAuMjk4LDEwLjk1Miw0LjY4LDEzLjM0NUM0MjcuNTA1LDI1OC4wMjQsNDUyLDI5Ni45NjMsNDUyLDMzOS4wMDFjMCwxNy45ODgtNC40MzQsMzUuODI3LTEyLjgyMSw1MS41OTEgICAgYy0yLjU5NCw0Ljg3NS0wLjc0NSwxMC45MzEsNC4xMzEsMTMuNTI1YzEuNDk2LDAuNzk2LDMuMTA0LDEuMTc0LDQuNjg4LDEuMTc0YzMuNTc4LDAsNy4wMzktMS45MjYsOC44MzctNS4zMDUgICAgQzQ2Ni43NTYsMzgxLjM0Miw0NzIsMzYwLjI1Myw0NzIsMzM5LjAwMUM0NzIsMzE0LjA0MSw0NjQuOTA1LDI4OS43OTIsNDUxLjQ4MiwyNjguODc2eiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojNkYyRTNEIiBkYXRhLW9sZF9jb2xvcj0iIzZmMmUzZCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzU3LjY3MywyMDkuMDAyTDM1NywyMDkuMDAxYy01LjUyMiwwLTEwLDQuNDc3LTEwLDEwYzAsNS41MjMsNC40NzgsMTAsMTAsMTBsMC41NzksMC4wMDFjMC4wMTYsMCwwLjAzMSwwLDAuMDQ4LDAgICAgYzUuNTAxLDAsOS45NzMtNC40NDYsOS45OTktOS45NTNDMzY3LjY1MSwyMTMuNTI2LDM2My4xOTUsMjA5LjAyOCwzNTcuNjczLDIwOS4wMDJ6IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iYWN0aXZlLXBhdGgiIHN0eWxlPSJmaWxsOiM2RjJFM0QiIGRhdGEtb2xkX2NvbG9yPSIjNmYyZTNkIj48L3BhdGg+Cgk8L2c+CjwvZz48Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yOTQuNDA3LDQzOC4yMDJjLTM3LjkxLTE4LjIyNS02Mi40MDUtNTcuMTY0LTYyLjQwNS05OS4yMDFjMC0xNy45ODgsNC40MzQtMzUuODI3LDEyLjgyMS01MS41OTEgICAgYzIuNTk0LTQuODc1LDAuNzQ1LTEwLjkzMS00LjEzMS0xMy41MjVjLTQuODc0LTIuNTk0LTEwLjkzMi0wLjc0NS0xMy41MjUsNC4xMzFjLTkuOTIxLDE4LjY0NS0xNS4xNjUsMzkuNzMzLTE1LjE2NSw2MC45ODUgICAgYzAsMjQuOTYsNy4wOTUsNDkuMjA4LDIwLjUxOCw3MC4xMjVjMTMuMDYzLDIwLjM1NSwzMS40NjcsMzYuNjQzLDUzLjIyMiw0Ny4xMDJjMS4zOTcsMC42NzIsMi44NzMsMC45ODksNC4zMjYsMC45ODkgICAgYzMuNzI0LDAsNy4yOTgtMi4wODksOS4wMi01LjY2OUMzMDEuNDc5LDQ0Ni41NywyOTkuMzg1LDQ0MC41OTUsMjk0LjQwNyw0MzguMjAyeiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBzdHlsZT0iZmlsbDojNkYyRTNEIiBkYXRhLW9sZF9jb2xvcj0iIzZmMmUzZCI+PC9wYXRoPgoJPC9nPgo8L2c+PGc+Cgk8Zz4KCQk8cGF0aCBkPSJNMzI3LjAwMiw0NDkuMDAxbC0wLjU3OS0wLjAwMmMtNS41NDgtMC4wMS0xMC4wMiw0LjQyOS0xMC4wNDUsOS45NTNjLTAuMDI2LDUuNTIzLDQuNDMyLDEwLjAyMSw5Ljk1NCwxMC4wNDdsMC42NywwLjAwMiAgICBjNS41MjIsMCwxMC00LjQ3OCwxMC0xMEMzMzcuMDAyLDQ1My40NzksMzMyLjUyNCw0NDkuMDAxLDMyNy4wMDIsNDQ5LjAwMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzZGMkUzRCIgZGF0YS1vbGRfY29sb3I9IiM2ZjJlM2QiPjwvcGF0aD4KCTwvZz4KPC9nPjxnPgoJPGc+CgkJPHBhdGggZD0iTTM4Ny40MDksMTc1LjE2OGMtMS4yMTctMi45LTIuNzA4LTUuNjMzLTQuNDQzLTguMTY4SDQwOWMyNS4zNjQsMCw0Ni0yMC42MzYsNDYtNDZzLTIwLjYzNi00Ni00Ni00NmgtODAuMDggICAgYzUuMDkxLTcuNDAyLDguMDgtMTYuMzU3LDguMDgtMjZjMC0yNS4zNjQtMjAuNjM2LTQ2LTQ2LTQ2SDQ2QzIwLjYzNiwzLDAsMjMuNjM2LDAsNDlzMjAuNjM2LDQ2LDQ2LDQ2aDgwLjA4ICAgIGMtNS4wOTEsNy40MDItOC4wOCwxNi4zNTctOC4wOCwyNnMyLjk4OCwxOC41OTgsOC4wOCwyNkgxMDBjLTI1LjM2NCwwLTQ2LDIwLjYzNi00Niw0
+NmMwLDE0LjU2Nyw2LjgxNCwyNy41NjYsMTcuNDE1LDM2ICAgIEM2MC44MTQsMjM3LjQzNCw1NCwyNTAuNDMzLDU0LDI2NXM2LjgxNCwyNy41NjYsMTcuNDE1LDM2QzYwLjgxNCwzMDkuNDM0LDU0LDMyMi40MzMsNTQsMzM3YzAsMTQuNTY3LDYuODE0LDI3LjU2NiwxNy40MTUsMzYgICAgQzYwLjgxNCwzODEuNDM0LDU0LDM5NC40MzMsNTQsNDA5YzAsMjUuMzY0LDIwLjYzNiw0Niw0Niw0NmgxMTcuODVjMzEuMDQ2LDMzLjIwNyw3NS4yMTIsNTQuMDAxLDEyNC4xNTEsNTQuMDAxICAgIGM5My43MzgsMCwxNzAtNzYuMjYyLDE3MC0xNzBDNTEyLjAwMSwyNjAuOTg0LDQ1OS4xNzEsMTk1LjA4MywzODcuNDA5LDE3NS4xNjh6IE00MDksOTVjMTQuMzM3LDAsMjYsMTEuNjY0LDI2LDI2ICAgIHMtMTEuNjYzLDI2LTI2LDI2aC02NEgxNjRjLTE0LjMzNywwLTI2LTExLjY2NC0yNi0yNnMxMS42NjMtMjYsMjYtMjZINDA5eiBNNDYsNzVjLTE0LjMzNywwLTI2LTExLjY2NC0yNi0yNnMxMS42NjMtMjYsMjYtMjZoMjQ1ICAgIGMxNC4zMzcsMCwyNiwxMS42NjQsMjYsMjZzLTExLjY2MywyNi0yNiwyNkg0NnogTTEwMCwxNjdoMjQ1YzQuMDI4LDAsNy44ODUsMC45MzYsMTEuMzQ1LDIuNjEyICAgIGMtNC43My0wLjM5Ny05LjUxMi0wLjYxMS0xNC4zNDQtMC42MTFjLTQ2Ljk0NSwwLTg5LjUwNSwxOS4xMjktMTIwLjI5OSw0OS45OTlIMTAwYy0xNC4zMzYsMC0yNi0xMS42NjQtMjYtMjZTODUuNjY0LDE2NywxMDAsMTY3ICAgIHogTTEwMCwyMzloMTA0LjYxNWMtMTEuMzUyLDE1LjU1My0yMC4xMjksMzMuMDk1LTI1LjcwMyw1MkgxMDBjLTE0LjMzNywwLTI2LTExLjY2My0yNi0yNkM3NCwyNTAuNjY0LDg1LjY2MywyMzksMTAwLDIzOXogICAgIE0xMDAsMzExaDc0LjMyYy0xLjUxNyw5LjExMy0yLjMxOSwxOC40NjQtMi4zMTksMjguMDAxYzAsOC4xNDYsMC41ODksMTYuMTU2LDEuNzAyLDIzLjk5OUgxMDBjLTE0LjMzNywwLTI2LTExLjY2My0yNi0yNiAgICBDNzQsMzIyLjY2Myw4NS42NjMsMzExLDEwMCwzMTF6IE0xMDAsNDM1Yy0xNC4zMzcsMC0yNi0xMS42NjMtMjYtMjZjMC0xNC4zMzcsMTEuNjYzLTI2LDI2LTI2aDc3Ljc4NiAgICBjNS4wNDYsMTguODEzLDEzLjI0MywzNi4zNDYsMjMuOTkzLDUySDEwMHogTTM0Mi4wMDEsNDg5LjAwMWMtODIuNzEsMC0xNTAtNjcuMjktMTUwLTE1MHM2Ny4yOS0xNTAsMTUwLTE1MHMxNTAsNjcuMjksMTUwLDE1MCAgICBTNDI0LjcxMSw0ODkuMDAxLDM0Mi4wMDEsNDg5LjAwMXoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6IzZGMkUzRCIgZGF0YS1vbGRfY29sb3I9IiM2ZjJlM2QiPjwvcGF0aD4KCTwvZz4KPC9nPjwvZz4gPC9zdmc+" /></span>	<p class="distribution__text">Reserves</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="distribution__box">
+					<div class="distribution__items">
+						<div class="distribution__left">
+							<div class="distribution__item">
+								<p class="distribution__text">Founders</p>
+								<span  style="color:#3d5421;"class="distribution__label">4.5%</span>
+							</div>
+							<div class="distribution__item">
+								<p class="distribution__text">Promotions</p>
+								<span style="color:#2e3516;" class="distribution__label">10%</span>
+							</div>
+							<div class="distribution__item">
+								<p class="distribution__text">Airdrop Campaign</p>
+								<span style="color:#694c0f;" class="distribution__label">20%</span>
+							</div>
+						</div>
+						<div class="distribution__middle">
+							<div class="distribution__item">
+								<p class="distribution__text">Crowdsale</p>
+								<span style="color:#14324e;" class="distribution__label">65%</span>
+							</div>
+						</div>
+						<div class="distribution__right">
+							<div class="distribution__item">
+								<span  style="color:#6b6015;"class="distribution__label">10%</span>
+								<p class="distribution__text">Seed Investors</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="distribution__buttons">
+					<li class="distribution__btn distribution__btn_active">Funds allocation</li>
+					<li class="distribution__btn">Distribution</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="container2">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="countdown-table wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
+                        <div class="countdown-table-cell">
+                            <h2 style="color: #021019;" class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".6s">Resources</h2>
+                            <a href="https://www.jelurida.com/ardor-client.sh" class="btn-style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".55s">
+                                     <span class="ti-android"></span>
+                                     <p class="dsp-tc">Download for
+                                         <br> <span>Linux</span></p>
+                                 </a>&nbsp;
+                            <a href="https://www.jelurida.com/ardor-client.exe" class="btn-style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".55s">
+                                         <span class="ti-microsoft-alt"></span>
+                                         <p class="dsp-tc">Download for
+                                             <br> <span>Windows</span></p>
+                                     </a>&nbsp;
+                            <a href="https://www.jelurida.com/ardor-installer.dmg" class=" btn-style-2  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
+                                     <span class="ti-apple"></span>
+                                     <p class="dsp-tc">Download for
+                                         <br> <span>Apple</span></p>
+                                 </a>&nbsp;<br><br>
+                            <a href="https://bittrex.com" class="btn-style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".55s">
+                                         <span class="ti-bar-chart"></span>
+                                         <p class="dsp-tc">Go on
+                                             <br> <span>Bittrex</span></p>
+                                     </a>&nbsp;
+                            <a href="https://hitbtc.com" class=" btn-style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
+                                         <span class="ti-bar-chart"></span>
+                                         <p class="dsp-tc">Go on
+                                             <br> <span>HitBTC</span></p>
+                                     </a>&nbsp;
+                            <a href="https://stocks.exchange" class=" btn-style-2  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
+                                         <span class="ti-bar-chart"></span>
+                                         <p class="dsp-tc">Go on
+                                             <br> <span>Stocks.Exchange</span></p>
+                                     </a>&nbsp;<br><br>
+                             <a href="https://www.jelurida.com" class="btn-style-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".55s">
+                                <span class="ti-info-alt"></span>
+                                <p class="dsp-tc">Go on
+                                    <br> <span>Jelurida</span></p>
+                                </a>&nbsp;
+                                <a href="https://www.ardorplatform.org" class=" btn-style-2  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
+                                           <span class="ti-info-alt"></span>
+                                           <p class="dsp-tc">Go  on
+                                               <br> <span>Ardor</span></p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div><br>
+</section>
+    <section class="advisors-area homepage-3">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2 class="wow bounceInUp" data-wow-duration="1s" data-wow-delay=".6s">Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="advisory-carosul-wrapper" align="center"   >
+                <div class="carsoul-single-item">
+                    <div class="carsoul-single-item-inner">
+					 <img src="assets/img/team-img/1.png" />
+                    </div>
+                    <div class="team-meta">
+                        <h4>Co-founder & CEO</h4>
+                        <p></p>
+						
+                    </div>
+                </div>
+                <div class="carsoul-single-item">
+                    <div class="carsoul-single-item-inner">
+                  <img src="assets/img/team-img/2.png" />
+                    </div>
+                    <div class="team-meta">
+                        <h4>Co-founder</h4>
+                        <p></p>
+                    </div>
+                </div>
+				<div class="carsoul-single-item">
+                    <div class="carsoul-single-item-inner">
+                  <img src="assets/img/team-img/2.png" />
+                    </div>
+                    <div class="team-meta">
+                        <h4>Co-founder</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carsoul-single-item">
+
+                <div class="carsoul-single-item">
+                    <div class="carsoul-single-item-inner">
+                        <img src="assets/img/team-img/3.png" />
+
+                    </div>
+                    <div class="team-meta">
+                        <h4>Co-founder </h4>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+
+<section id="faq-area" class="faq-area homepage-3 homepage-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2 class="wow pulse" data-wow-duration="1s" data-wow-delay=".6s">Frequently Asked Questions</h2>
+                        <p class="wow lightSpeedIn" data-wow-duration="1s" data-wow-delay=".6s">if you have any doubts that were not clarified, you can check here .</p>
+                    </div>
+                </div>
+            </div>
+            <!--TAB AREA-->
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="tabs animated-slide-2  ">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab">Volpcoin</a></li>
+                            <li role="presentation"><a href="#volp-token" aria-controls="volp-token" role="tab" data-toggle="tab">Token</a></li>
+                            <li role="presentation"><a href="#volp-ai" aria-controls="volp-ai" role="tab" data-toggle="tab">Volp A.I</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="general">
+
+                                <article class="beefup example-opensingle">
+                                    <h4 class="beefup__head">
+                                        1. What can I do with my VCP coins after the launch of the new Volp A.I.?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">After the launch of the new Volp AI platform, the old coin will have no more value, but the blockchain will be implemented on the new platform.</p>
+										</div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        2. Why a new platform?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">The blockchain of Volpcoin beta it has some anomalous effects that in the period of data collection we detected and realized that the language that the prototype was running was incompatible with the technology we proposed to apply. <p></p> It wasn't possible to be fully completed due to the incompatibility of supporting sophisticated algorithms. So we decided to move forward on a new platform, to see if the results were satisfactory.  </p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        3. Is there any way for Volpcoin beta get on an exchange?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">Since the old coin will don't have value after the launch of the new platform, I don't think it necessary to be on an exchange </p>
+                                    </div>
+                                </article>
+
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="volp-token">
+
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        1. What is the purpose of the Volp Token?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">The Volp token is just a way of monetizing the value behind the Volp technology and distributing that value to all of the supporting community.</p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        2. What is the total supply?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">The total supply is 150.000.000 VOLP</p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        3. How many coins does the team hold?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">The Volp team hold 4.5% of the Volp Token</p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        4. Where is the token listed?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">The Volp Token is listed on Ardor plataform, more specific on the IGNIS blockchain</p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        5. How do I get Ardor or IGNIS?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">You can get ARDOR or IGNIS on this follow exchanges: Indodax, Upbit, Bittrex, HitBTC, Stock. Exchange</p></div>
+                                </article>
+                                
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="volp-ai">
+
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        1. When are you going to launch a demo of the new platform?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">We will launch the new platform Volp A.I on 10th August  </p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        2. What features does this new platform will have?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;">The Volp will not be a copy, it will have a totally unique and disruptive language and concept, the result of solid work, even before the blockchain is presented to the world.  Therefore, in a few days we will be presenting the prototype demo, with the applications of work in the following orders: Autonomous management, operation, and distribution; Compression effect with maximum stress;</p>
+                                    </div>
+                                </article>
+                                <article class="beefup example-opensingle ">
+                                    <h4 class="beefup__head">
+                                        3. Is this open source?
+                                        <span class="ti-angle-down"></span>
+                                    </h4>
+
+                                    <div class="beefup__body">
+                                        <p style="color:#30375f;" >Yes our platform will be open source</p>
+                                    </div>
+                                </article>
+
+                            </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="footer2">
+		<div class="container">
+	<p class="footer__copy">Copyright &copy; 2018 Volp A.I. All rights reserved</p>
+		</div>
+	</footer>
+  </div>
+       <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.plugins2.js"></script>
+    <script src="assets/js/ajax-mail.js"></script>
+    <script src="assets/js/ajax-subscribe.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/jquery.lazylinepainter-1.7.0.min.js"></script>
+    <script src="assets/js/device-svg.js"></script>
+    <!-- Load Scripts-->
+
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/circle-progress.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    
+    <!--script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script-!-->
+    <!--script>
+    	Weglot.setup({
+    	  api_key: 'wg_36605e1a8b8fe3a2010a7b4329a247a17',
+    	  originalLanguage: 'en',
+    	  destinationLanguages : 'pt,ru,zh,ja,es,ko,hr,fr,it',
+		 styleOpt : { fullname: true , withname: true , is_dropdown: true , classF: "wg-flags flag-3" },
+  exceptions: "#not-this-element,.not-this-class.p",
+  excludePaths: "",
+  dynamic: ".a-container-of-dynamic-content",
+  autoSwitch: true,
+  translateSearch: false,
+  switchers: [
+    {
+      styleOpt:{
+        fullname: true,
+        withname: true,
+        is_dropdown: true,
+        classF: "wg-flags flag-3"
+      },
+      containerCss: "",
+      target: ".site-header__section--title",
+      sibling: null
+    }
+  ]
+});
+    </script--!>
+
+
+
+
+
+<!--init scripts-->
+<script src="assets/js/script-roadmap.js"></script>
+
+</body>
+</html>
